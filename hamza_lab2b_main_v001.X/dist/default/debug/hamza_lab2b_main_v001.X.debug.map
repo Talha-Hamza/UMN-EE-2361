@@ -4,11 +4,6 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp00006e0c.00 \
-  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp00006e0c.01 \
-  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp00006e0c.02 \
-  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp00006e0c.03 \
-  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp00006e0c.04 \
   -p24FJ64GA002 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
@@ -28,7 +23,8 @@ Command:
   --defsym=__MPLAB_BUILD=1 \
   --defsym=__MPLAB_DEBUG=1 \
   --defsym=__DEBUG=1 \
-  -Tp24FJ64GA002.gld.05 \
+  --defsym=__MPLAB_DEBUGGER_SIMULATOR=1 \
+  -Tp24FJ64GA002.gld.00 \
   --stack=16 \
   --check-sections \
   --data-init \
@@ -73,22 +69,17 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xd2           0x13b  (315)
-.text                        0x2d2               0x1ec           0x2e2  (738)
+.text                        0x2d2               0x1fc           0x2fa  (762)
 
-                 Total "program" memory used (bytes):          0x41d  (1053) 1%
+                 Total "program" memory used (bytes):          0x435  (1077) 1%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-reserve_data_0x800           0x800                0x20            0x20  (32)
-reserve_data_0x820           0x820                 0x2             0x2  (2)
-reserve_data_0x822           0x822                 0x2             0x2  (2)
-reserve_data_0x824           0x824                 0x2             0x2  (2)
-reserve_data_0x826           0x826                0x2a            0x2a  (42)
 
-                 Total "data" memory used (bytes):           0x50  (80) <1%
+                 Total "data" memory used (bytes):              0  (0) 
 
 
 Dynamic Memory Usage
@@ -96,9 +87,9 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x850                              0x1fb0  (8112)
+stack                        0x800                              0x2000  (8192)
 
-                 Maximum dynamic memory (bytes):         0x1fb0  (8112)
+                 Maximum dynamic memory (bytes):         0x2000  (8192)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
@@ -112,38 +103,38 @@ External Symbols in Program Memory (by address):
                   0x0002cc                  __DefaultInterrupt
                   0x0002d2                  _setup
                   0x0002ea                  _main
-                  0x000336                  _writeColor
-                  0x0003aa                  _delay
-                  0x0003c8                  _packColor
-                  0x0003f8                  _getR
-                  0x000406                  _getG
-                  0x00041a                  _getB
-                  0x000426                  _Wheel
-                  0x000498                  _wait_1ms
-                  0x00049c                  _wait_100us
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x000338                  _writeColor
+                  0x0003ba                  _delay
+                  0x0003d8                  _packColor
+                  0x000408                  _getR
+                  0x000416                  _getG
+                  0x00042a                  _getB
+                  0x000436                  _Wheel
+                  0x0004a8                  _wait_1ms
+                  0x0004ac                  _wait_100us
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1
 
 External Symbols in Program Memory (by name):
 
-                  0x000426                  _Wheel
+                  0x000436                  _Wheel
                   0x0002cc                  __DefaultInterrupt
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x0003aa                  _delay
-                  0x00041a                  _getB
-                  0x000406                  _getG
-                  0x0003f8                  _getR
+                  0x0003ba                  _delay
+                  0x00042a                  _getB
+                  0x000416                  _getG
+                  0x000408                  _getR
                   0x0002ea                  _main
-                  0x0003c8                  _packColor
+                  0x0003d8                  _packColor
                   0x0002d2                  _setup
-                  0x00049c                  _wait_100us
-                  0x000498                  _wait_1ms
-                  0x000336                  _writeColor
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x0004ac                  _wait_100us
+                  0x0004a8                  _wait_1ms
+                  0x000338                  _writeColor
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1
 
 Memory Configuration
 
@@ -160,36 +151,12 @@ CONFIG1          0x00abfe           0x000002
 
 Linker script and memory map
 
-
-reserve_data_0x800
-                    0x0800         0x20
-                    0x0820                  . = 0x20
- *fill*             0x0800         0x2000
-
-reserve_data_0x820
-                    0x0820          0x2
-                    0x0822                  . = 0x2
- *fill*             0x0820          0x200
-
-reserve_data_0x822
-                    0x0822          0x2
-                    0x0824                  . = 0x2
- *fill*             0x0822          0x200
-
-reserve_data_0x824
-                    0x0824          0x2
-                    0x0826                  . = 0x2
- *fill*             0x0824          0x200
-
-reserve_data_0x826
-                    0x0826         0x2a
-                    0x0850                  . = 0x2a
- *fill*             0x0826         0x2a00
 LOAD build/default/debug/hamza_lab2_asmb_v001.o
 LOAD build/default/debug/main_v001.o
                     0x0001                  __MPLAB_BUILD = 0x1
                     0x0001                  __MPLAB_DEBUG = 0x1
                     0x0001                  __DEBUG = 0x1
+                    0x0001                  __MPLAB_DEBUGGER_SIMULATOR = 0x1
 LOAD pPIC24Fxxx
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
@@ -243,21 +210,21 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000        0x609
+.debug_info       0x000000        0x647
  *(.debug_info)
  .debug_info      0x000000         0xbf build/default/debug/hamza_lab2_asmb_v001.o
- .debug_info      0x0000bf        0x54a build/default/debug/main_v001.o
+ .debug_info      0x0000bf        0x588 build/default/debug/main_v001.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x16c
+.debug_abbrev     0x000000        0x177
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x14 build/default/debug/hamza_lab2_asmb_v001.o
- .debug_abbrev    0x000014        0x158 build/default/debug/main_v001.o
+ .debug_abbrev    0x000014        0x163 build/default/debug/main_v001.o
 
-.debug_line       0x000000        0x1a0
+.debug_line       0x000000        0x1aa
  *(.debug_line)
  .debug_line      0x000000         0x55 build/default/debug/hamza_lab2_asmb_v001.o
- .debug_line      0x000055        0x14b build/default/debug/main_v001.o
+ .debug_line      0x000055        0x155 build/default/debug/main_v001.o
 
 .debug_frame      0x000000         0xfe
  *(.debug_frame)
@@ -897,19 +864,19 @@ __c30_signature
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 build/default/debug/main_v001.o
 
-.text             0x0002d2        0x1ec
- .text            0x0002d2        0x1c6 build/default/debug/main_v001.o
+.text             0x0002d2        0x1fc
+ .text            0x0002d2        0x1d6 build/default/debug/main_v001.o
                   0x0002d2                  _setup
                   0x0002ea                  _main
-                  0x000336                  _writeColor
-                  0x0003aa                  _delay
-                  0x0003c8                  _packColor
-                  0x0003f8                  _getR
-                  0x000406                  _getG
-                  0x00041a                  _getB
-                  0x000426                  _Wheel
- .text            0x000498         0x26 build/default/debug/hamza_lab2_asmb_v001.o
-                  0x000498                  _wait_1ms
-                  0x00049c                  _wait_100us
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x000338                  _writeColor
+                  0x0003ba                  _delay
+                  0x0003d8                  _packColor
+                  0x000408                  _getR
+                  0x000416                  _getG
+                  0x00042a                  _getB
+                  0x000436                  _Wheel
+ .text            0x0004a8         0x26 build/default/debug/hamza_lab2_asmb_v001.o
+                  0x0004a8                  _wait_1ms
+                  0x0004ac                  _wait_100us
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1

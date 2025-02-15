@@ -39,16 +39,18 @@ void setup(void) {
 
 int main(void) {
     setup();
+   
+    while(1) {
+    wait_1ms();
 
-    while (1) {
         for (int a = 0; a <= 255; a++) {
-            uint32_t color = Wheel(a);  // Get packed color
-            int r = getR(color);    // Extract red component
-            int g = getG(color);    // Extract green component
-            int b = getB(color);    // Extract blue component
+            uint32_t color = Wheel(a); 
+            int r = getR(color);   
+            int g = getG(color);  
+            int b = getB(color);    
             
-            writeColor(r, g, b);  // Send to LED
-            delay(50);            // Delay for smooth transition
+            writeColor(r, g, b);  
+            delay(50);            
         }
     } 
 
@@ -59,18 +61,36 @@ int main(void) {
     
     
 void writeColor(int r, int g, int b) {
-    int i;
-    for(i = 7; i >= 0; i--) {
-        r & (1 << i) ? write_1() : write_0();
+    // Send the red color
+    for (int i = 0; i < 8; i++) {
+        if (r & (1 << (7 - i))) {  // Check if the bit is 1
+            write_1();  // Send 1
+        } else {
+            write_0();  // Send 0
+        }
     }
-    for(i = 7; i >= 0; i--) {
-        g & (1 << i) ? write_1() : write_0();
+
+    // Send the green color
+    for (int i = 0; i < 8; i++) {
+        if (g & (1 << (7 - i))) {  // Check if the bit is 1
+            write_1();  // Send 1
+        } else {
+            write_0();  // Send 0
+        }
     }
-    for(i = 7; i >= 0; i--) {
-        b & (1 << i) ? write_1() : write_0();
+
+    // Send the blue color
+    for (int i = 0; i < 8; i++) {
+        if (b & (1 << (7 - i))) {  // Check if the bit is 1
+            write_1();  // Send 1
+        } else {
+            write_0();  // Send 0
+        }
     }
+
     wait_100us();
 }
+
 
 void delay(int delay_in_ms) {
     int i = 0;

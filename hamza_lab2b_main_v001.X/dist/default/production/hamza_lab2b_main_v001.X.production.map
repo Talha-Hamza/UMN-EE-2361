@@ -66,9 +66,9 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xd2           0x13b  (315)
-.text                        0x2d2               0x1ec           0x2e2  (738)
+.text                        0x2d2               0x1fc           0x2fa  (762)
 
-                 Total "program" memory used (bytes):          0x41d  (1053) 1%
+                 Total "program" memory used (bytes):          0x435  (1077) 1%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -100,38 +100,38 @@ External Symbols in Program Memory (by address):
                   0x0002cc                  __DefaultInterrupt
                   0x0002d2                  _setup
                   0x0002ea                  _main
-                  0x000336                  _writeColor
-                  0x0003aa                  _delay
-                  0x0003c8                  _packColor
-                  0x0003f8                  _getR
-                  0x000406                  _getG
-                  0x00041a                  _getB
-                  0x000426                  _Wheel
-                  0x000498                  _wait_1ms
-                  0x00049c                  _wait_100us
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x000338                  _writeColor
+                  0x0003ba                  _delay
+                  0x0003d8                  _packColor
+                  0x000408                  _getR
+                  0x000416                  _getG
+                  0x00042a                  _getB
+                  0x000436                  _Wheel
+                  0x0004a8                  _wait_1ms
+                  0x0004ac                  _wait_100us
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1
 
 External Symbols in Program Memory (by name):
 
-                  0x000426                  _Wheel
+                  0x000436                  _Wheel
                   0x0002cc                  __DefaultInterrupt
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x0003aa                  _delay
-                  0x00041a                  _getB
-                  0x000406                  _getG
-                  0x0003f8                  _getR
+                  0x0003ba                  _delay
+                  0x00042a                  _getB
+                  0x000416                  _getG
+                  0x000408                  _getR
                   0x0002ea                  _main
-                  0x0003c8                  _packColor
+                  0x0003d8                  _packColor
                   0x0002d2                  _setup
-                  0x00049c                  _wait_100us
-                  0x000498                  _wait_1ms
-                  0x000336                  _writeColor
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x0004ac                  _wait_100us
+                  0x0004a8                  _wait_1ms
+                  0x000338                  _writeColor
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1
 
 Memory Configuration
 
@@ -204,21 +204,21 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000        0x609
+.debug_info       0x000000        0x647
  *(.debug_info)
  .debug_info      0x000000         0xbf build/default/production/hamza_lab2_asmb_v001.o
- .debug_info      0x0000bf        0x54a build/default/production/main_v001.o
+ .debug_info      0x0000bf        0x588 build/default/production/main_v001.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x16c
+.debug_abbrev     0x000000        0x177
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x14 build/default/production/hamza_lab2_asmb_v001.o
- .debug_abbrev    0x000014        0x158 build/default/production/main_v001.o
+ .debug_abbrev    0x000014        0x163 build/default/production/main_v001.o
 
-.debug_line       0x000000        0x1a0
+.debug_line       0x000000        0x1aa
  *(.debug_line)
  .debug_line      0x000000         0x55 build/default/production/hamza_lab2_asmb_v001.o
- .debug_line      0x000055        0x14b build/default/production/main_v001.o
+ .debug_line      0x000055        0x155 build/default/production/main_v001.o
 
 .debug_frame      0x000000         0xfe
  *(.debug_frame)
@@ -858,19 +858,19 @@ __c30_signature
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 build/default/production/main_v001.o
 
-.text             0x0002d2        0x1ec
- .text            0x0002d2        0x1c6 build/default/production/main_v001.o
+.text             0x0002d2        0x1fc
+ .text            0x0002d2        0x1d6 build/default/production/main_v001.o
                   0x0002d2                  _setup
                   0x0002ea                  _main
-                  0x000336                  _writeColor
-                  0x0003aa                  _delay
-                  0x0003c8                  _packColor
-                  0x0003f8                  _getR
-                  0x000406                  _getG
-                  0x00041a                  _getB
-                  0x000426                  _Wheel
- .text            0x000498         0x26 build/default/production/hamza_lab2_asmb_v001.o
-                  0x000498                  _wait_1ms
-                  0x00049c                  _wait_100us
-                  0x0004a2                  _write_0
-                  0x0004b0                  _write_1
+                  0x000338                  _writeColor
+                  0x0003ba                  _delay
+                  0x0003d8                  _packColor
+                  0x000408                  _getR
+                  0x000416                  _getG
+                  0x00042a                  _getB
+                  0x000436                  _Wheel
+ .text            0x0004a8         0x26 build/default/production/hamza_lab2_asmb_v001.o
+                  0x0004a8                  _wait_1ms
+                  0x0004ac                  _wait_100us
+                  0x0004b2                  _write_0
+                  0x0004c0                  _write_1
