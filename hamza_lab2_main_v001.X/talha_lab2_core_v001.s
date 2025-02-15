@@ -19,14 +19,7 @@ stack:
 .global _main               ;BP
 ;your functions go here
     
-# delay_100_micro:
-#     ; 2 cycles when function called
-#     repeat #1593;1 cycle to load
-#     nop		;1593+1
-#     return	;3 cycles
-    
 delay_1_milli:
-    ;16000 cycles total
     repeat #15993
     nop
     return
@@ -113,21 +106,6 @@ _main:
     
     call delay_1_milli
     
-    
     bra foreverLoop
-    
-#     foreverLoop: 
-#     
-# 			; 2 cycles from previous BRA
-#     call high24low32	; 22 cycles
-#     ; HIGH 24
-#     inc LATA;		; 1 cycles
-#     call high24low32	; 22 cycles
-#     repeat #6		; 1 cycle to load
-#     nop			; 6+1 to execute
-#     clr LATA		; 1 cycle
-#     
-#     bra foreverLoop
-   
     .end
     
