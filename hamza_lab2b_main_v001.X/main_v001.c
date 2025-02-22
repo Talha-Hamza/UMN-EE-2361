@@ -25,6 +25,11 @@ unsigned char getG(uint32_t packedColor);
 unsigned char getB(uint32_t packedColor);
 void delay(int delay_in_ms);
 
+    int r = 0;
+    int b = 0;
+    int g = 0;
+    int flag = 0;
+
 
 #define PERIOD 5 
 
@@ -40,24 +45,33 @@ void setup(void) {
 int main(void) {
     setup();
    
-    while(1) {
-    wait_1ms();
-
-        for (int a = 0; a <= 255; a++) {
-            uint32_t color = Wheel(a); 
-            int r = getR(color);   
-            int g = getG(color);  
-            int b = getB(color);    
-            
-            writeColor(r, g, b);  
-            delay(50);            
+while(1){
+        
+        if (flag == 0 ){
+        r += 1;
+        b = 255-r;
+            if (r == 255){flag = 1;}
         }
-    } 
+        
+        if (flag == 1 ){
+            r = r - 1;
+            b = 255-r;            
+            if (r == 0){flag = 0;}
+        }
+        
 
-    return 0;
+        wait_1ms();
+        wait_1ms();
+        wait_1ms();
+        wait_1ms();
+        wait_1ms();
+        wait_1ms();
+
+        writeColor(r, 0, b);   
+    }
+
+        return 0;
 }
-
-
     
     
 void writeColor(int r, int g, int b) {
@@ -128,3 +142,4 @@ uint32_t Wheel(unsigned char WheelPos) {
         return packColor(WheelPos * 3, 255 - WheelPos * 3, 0);
     }
 }
+
