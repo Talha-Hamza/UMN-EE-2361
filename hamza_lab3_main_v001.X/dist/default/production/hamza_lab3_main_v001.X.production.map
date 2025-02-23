@@ -66,20 +66,19 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xce           0x135  (309)
-.const                       0x2ce                0x10            0x18  (24)
-.text                        0x2de               0x496           0x6e1  (1761)
-.dinit                       0x774                 0xa             0xf  (15)
+.text                        0x2ce               0x3d2           0x5bb  (1467)
+.dinit                       0x6a0                 0xc            0x12  (18)
 
-                 Total "program" memory used (bytes):          0x83d  (2109) 3%
+                 Total "program" memory used (bytes):          0x702  (1794) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.ndata                       0x800                   0             0x2  (2)
+.ndata                       0x800                   0             0x4  (4)
 
-                 Total "data" memory used (bytes):            0x2  (2) <1%
+                 Total "data" memory used (bytes):            0x4  (4) <1%
 
 
 Dynamic Memory Usage
@@ -87,12 +86,24 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x802                              0x1ffe  (8190)
+stack                        0x804                              0x1ffc  (8188)
 
-                 Maximum dynamic memory (bytes):         0x1ffe  (8190)
+                 Maximum dynamic memory (bytes):         0x1ffc  (8188)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
+
+External Symbols in Data Memory (by address):
+
+                    0x0800                  _pressedKey
+                    0x0801                  _lastKey
+                    0x0802                  _secondLastKey
+
+External Symbols in Data Memory (by name):
+
+                    0x0801                  _lastKey
+                    0x0800                  _pressedKey
+                    0x0802                  _secondLastKey
 
 External Symbols in Program Memory (by address):
 
@@ -101,19 +112,17 @@ External Symbols in Program Memory (by address):
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x0002c8                  __DefaultInterrupt
-                  0x0002de                  _init7seg
-                  0x0002f8                  _showChar7seg
-                  0x000452                  _delay
-                  0x000470                  _test
-                  0x000520                  _setup
-                  0x00052e                  _main
-                  0x000684                  _initKeyPad
-                  0x0006ac                  _checkCols
-                  0x0006de                  _readKeyPadRAW
-                  0x000744                  _mapKey
-                  0x000764                  _wait_1ms
-                  0x000768                  _wait_100us
-                  0x00076e                  _wait_1us
+                  0x0002ce                  _init7seg
+                  0x0002e8                  _showChar7seg
+                  0x000442                  _delay
+                  0x000460                  _test
+                  0x000510                  _readKeypad
+                  0x000620                  _initKeyPad
+                  0x000648                  _setup
+                  0x000656                  _main
+                  0x000690                  _wait_1ms
+                  0x000694                  _wait_100us
+                  0x00069a                  _wait_1us
 
 External Symbols in Program Memory (by name):
 
@@ -122,19 +131,17 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x0006ac                  _checkCols
-                  0x000452                  _delay
-                  0x0002de                  _init7seg
-                  0x000684                  _initKeyPad
-                  0x00052e                  _main
-                  0x000744                  _mapKey
-                  0x0006de                  _readKeyPadRAW
-                  0x000520                  _setup
-                  0x0002f8                  _showChar7seg
-                  0x000470                  _test
-                  0x000768                  _wait_100us
-                  0x000764                  _wait_1ms
-                  0x00076e                  _wait_1us
+                  0x000442                  _delay
+                  0x0002ce                  _init7seg
+                  0x000620                  _initKeyPad
+                  0x000656                  _main
+                  0x000510                  _readKeypad
+                  0x000648                  _setup
+                  0x0002e8                  _showChar7seg
+                  0x000460                  _test
+                  0x000694                  _wait_100us
+                  0x000690                  _wait_1ms
+                  0x00069a                  _wait_1us
 
 Memory Configuration
 
@@ -207,29 +214,29 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000        0x872
+.debug_info       0x000000        0x7ce
  *(.debug_info)
  .debug_info      0x000000         0xbe build/default/production/hamza_lab3_asmb_v001.o
- .debug_info      0x0000be        0x7b4 build/default/production/display.o
+ .debug_info      0x0000be        0x710 build/default/production/display.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x195
+.debug_abbrev     0x000000        0x18d
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x14 build/default/production/hamza_lab3_asmb_v001.o
- .debug_abbrev    0x000014        0x181 build/default/production/display.o
+ .debug_abbrev    0x000014        0x179 build/default/production/display.o
 
-.debug_line       0x000000        0x20c
+.debug_line       0x000000        0x1e6
  *(.debug_line)
  .debug_line      0x000000         0x4a build/default/production/hamza_lab3_asmb_v001.o
- .debug_line      0x00004a        0x1c2 build/default/production/display.o
+ .debug_line      0x00004a        0x19c build/default/production/display.o
 
-.debug_frame      0x000000        0x118
+.debug_frame      0x000000         0xe4
  *(.debug_frame)
- .debug_frame     0x000000        0x118 build/default/production/display.o
+ .debug_frame     0x000000         0xe4 build/default/production/display.o
 
-.debug_str        0x000000         0x1f
+.debug_str        0x000000         0x38
  *(.debug_str)
- .debug_str       0x000000         0x1f build/default/production/display.o
+ .debug_str       0x000000         0x38 build/default/production/display.o
 
 .debug_loc
  *(.debug_loc)
@@ -238,10 +245,10 @@ __CONFIG1
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000         0x90
+                  0x000000         0xa1
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0x90 build/default/production/display.o
+                  0x000000         0xa1 build/default/production/display.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -854,8 +861,11 @@ __c30_signature
  __c30_signature
                   0x0000c2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
 
-.ndata              0x0800          0x2
- .ndata             0x0800          0x2 build/default/production/display.o
+.ndata              0x0800          0x4
+ .ndata             0x0800          0x4 build/default/production/display.o
+                    0x0800                  _pressedKey
+                    0x0801                  _lastKey
+                    0x0802                  _secondLastKey
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
@@ -864,25 +874,20 @@ __c30_signature
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 build/default/production/display.o
 
-.const              0x82ce         0x10 load address 0x0002ce  
- .const             0x82ce         0x10 build/default/production/display.o
+.text             0x0002ce        0x3d2
+ .text            0x0002ce        0x3c2 build/default/production/display.o
+                  0x0002ce                  _init7seg
+                  0x0002e8                  _showChar7seg
+                  0x000442                  _delay
+                  0x000460                  _test
+                  0x000510                  _readKeypad
+                  0x000620                  _initKeyPad
+                  0x000648                  _setup
+                  0x000656                  _main
+ .text            0x000690         0x10 build/default/production/hamza_lab3_asmb_v001.o
+                  0x000690                  _wait_1ms
+                  0x000694                  _wait_100us
+                  0x00069a                  _wait_1us
 
-.text             0x0002de        0x496
- .text            0x0002de        0x486 build/default/production/display.o
-                  0x0002de                  _init7seg
-                  0x0002f8                  _showChar7seg
-                  0x000452                  _delay
-                  0x000470                  _test
-                  0x000520                  _setup
-                  0x00052e                  _main
-                  0x000684                  _initKeyPad
-                  0x0006ac                  _checkCols
-                  0x0006de                  _readKeyPadRAW
-                  0x000744                  _mapKey
- .text            0x000764         0x10 build/default/production/hamza_lab3_asmb_v001.o
-                  0x000764                  _wait_1ms
-                  0x000768                  _wait_100us
-                  0x00076e                  _wait_1us
-
-.dinit            0x000774          0xa
- .dinit           0x000774          0xa data_init
+.dinit            0x0006a0          0xc
+ .dinit           0x0006a0          0xc data_init
