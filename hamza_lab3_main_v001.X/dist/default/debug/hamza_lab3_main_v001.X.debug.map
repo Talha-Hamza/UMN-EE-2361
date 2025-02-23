@@ -4,10 +4,15 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
+  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp000097e0.00 \
+  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp000097e0.01 \
+  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp000097e0.02 \
+  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp000097e0.03 \
+  -TC:\\Users\\Hamza\\AppData\\Local\\Temp\\tmp000097e0.04 \
   -p24FJ64GA002 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
-  dist/default/production/hamza_lab3_main_v001.X.production.elf \
+  dist/default/debug/hamza_lab3_main_v001.X.debug.elf \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/.. \
   -LC:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16/bin/../support/PIC24F/gld \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../lib \
@@ -18,10 +23,12 @@ Command:
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33C/gld \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33E/gld \
   -Lc:/program files/microchip/xc16/v2.10/bin/bin/../../support/dsPIC33F/gld \
-  build/default/production/hamza_lab3_asmb_v001.o \
-  build/default/production/display.o \
+  build/default/debug/hamza_lab3_asmb_v001.o \
+  build/default/debug/display.o \
   --defsym=__MPLAB_BUILD=1 \
-  -Tp24FJ64GA002.gld.00 \
+  --defsym=__MPLAB_DEBUG=1 \
+  --defsym=__DEBUG=1 \
+  -Tp24FJ64GA002.gld.05 \
   --stack=16 \
   --check-sections \
   --data-init \
@@ -33,10 +40,10 @@ Command:
   --stackguard=16 \
   --no-force-link \
   --smart-io \
-  -Map=dist/default/production/hamza_lab3_main_v001.X.production.map \
+  -Map=dist/default/debug/hamza_lab3_main_v001.X.debug.map \
   --report-mem \
   --memorysummary \
-  dist/default/production/memoryfile.xml \
+  dist/default/debug/memoryfile.xml \
   -start-group \
   --library=c99-pic30-elf \
   --library=m-elf \
@@ -67,19 +74,24 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200                0xce           0x135  (309)
 .const                       0x2ce                0x10            0x18  (24)
-.text                        0x2de               0x496           0x6e1  (1761)
-.dinit                       0x774                 0xa             0xf  (15)
+.text                        0x2de               0x366           0x519  (1305)
+.dinit                       0x644                 0xa             0xf  (15)
 
-                 Total "program" memory used (bytes):          0x83d  (2109) 3%
+                 Total "program" memory used (bytes):          0x675  (1653) 2%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.ndata                       0x800                   0             0x2  (2)
+reserve_data_0x800           0x800                0x20            0x20  (32)
+reserve_data_0x820           0x820                 0x2             0x2  (2)
+reserve_data_0x822           0x822                 0x2             0x2  (2)
+reserve_data_0x824           0x824                 0x2             0x2  (2)
+reserve_data_0x826           0x826                0x2a            0x2a  (42)
+.ndata                       0x850                   0             0x2  (2)
 
-                 Total "data" memory used (bytes):            0x2  (2) <1%
+                 Total "data" memory used (bytes):           0x52  (82) 1%
 
 
 Dynamic Memory Usage
@@ -87,9 +99,9 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x802                              0x1ffe  (8190)
+stack                        0x852                              0x1fae  (8110)
 
-                 Maximum dynamic memory (bytes):         0x1ffe  (8190)
+                 Maximum dynamic memory (bytes):         0x1fae  (8110)
 
 Info: Project is using a large data memory model when small data memory model is sufficient.
 
@@ -107,13 +119,13 @@ External Symbols in Program Memory (by address):
                   0x000470                  _test
                   0x000520                  _setup
                   0x00052e                  _main
-                  0x000684                  _initKeyPad
-                  0x0006ac                  _checkCols
-                  0x0006de                  _readKeyPadRAW
-                  0x000744                  _mapKey
-                  0x000764                  _wait_1ms
-                  0x000768                  _wait_100us
-                  0x00076e                  _wait_1us
+                  0x000554                  _initKeyPad
+                  0x00057c                  _checkCols
+                  0x0005ae                  _readKeyPadRAW
+                  0x000614                  _mapKey
+                  0x000634                  _wait_1ms
+                  0x000638                  _wait_100us
+                  0x00063e                  _wait_1us
 
 External Symbols in Program Memory (by name):
 
@@ -122,19 +134,19 @@ External Symbols in Program Memory (by name):
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x0006ac                  _checkCols
+                  0x00057c                  _checkCols
                   0x000452                  _delay
                   0x0002de                  _init7seg
-                  0x000684                  _initKeyPad
+                  0x000554                  _initKeyPad
                   0x00052e                  _main
-                  0x000744                  _mapKey
-                  0x0006de                  _readKeyPadRAW
+                  0x000614                  _mapKey
+                  0x0005ae                  _readKeyPadRAW
                   0x000520                  _setup
                   0x0002f8                  _showChar7seg
                   0x000470                  _test
-                  0x000768                  _wait_100us
-                  0x000764                  _wait_1ms
-                  0x00076e                  _wait_1us
+                  0x000638                  _wait_100us
+                  0x000634                  _wait_1ms
+                  0x00063e                  _wait_1us
 
 Memory Configuration
 
@@ -151,9 +163,36 @@ CONFIG1          0x00abfe           0x000002
 
 Linker script and memory map
 
-LOAD build/default/production/hamza_lab3_asmb_v001.o
-LOAD build/default/production/display.o
+
+reserve_data_0x800
+                    0x0800         0x20
+                    0x0820                  . = 0x20
+ *fill*             0x0800         0x2000
+
+reserve_data_0x820
+                    0x0820          0x2
+                    0x0822                  . = 0x2
+ *fill*             0x0820          0x200
+
+reserve_data_0x822
+                    0x0822          0x2
+                    0x0824                  . = 0x2
+ *fill*             0x0822          0x200
+
+reserve_data_0x824
+                    0x0824          0x2
+                    0x0826                  . = 0x2
+ *fill*             0x0824          0x200
+
+reserve_data_0x826
+                    0x0826         0x2a
+                    0x0850                  . = 0x2a
+ *fill*             0x0826         0x2a00
+LOAD build/default/debug/hamza_lab3_asmb_v001.o
+LOAD build/default/debug/display.o
                     0x0001                  __MPLAB_BUILD = 0x1
+                    0x0001                  __MPLAB_DEBUG = 0x1
+                    0x0001                  __DEBUG = 0x1
 LOAD pPIC24Fxxx
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libfx-elf.a
                     0xabfc                  __CONFIG2 = 0xabfc
@@ -207,29 +246,29 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000        0x872
+.debug_info       0x000000        0x8ae
  *(.debug_info)
- .debug_info      0x000000         0xbe build/default/production/hamza_lab3_asmb_v001.o
- .debug_info      0x0000be        0x7b4 build/default/production/display.o
+ .debug_info      0x000000         0xbe build/default/debug/hamza_lab3_asmb_v001.o
+ .debug_info      0x0000be        0x7f0 build/default/debug/display.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0x195
+.debug_abbrev     0x000000        0x17e
  *(.debug_abbrev)
- .debug_abbrev    0x000000         0x14 build/default/production/hamza_lab3_asmb_v001.o
- .debug_abbrev    0x000014        0x181 build/default/production/display.o
+ .debug_abbrev    0x000000         0x14 build/default/debug/hamza_lab3_asmb_v001.o
+ .debug_abbrev    0x000014        0x16a build/default/debug/display.o
 
-.debug_line       0x000000        0x20c
+.debug_line       0x000000        0x1f3
  *(.debug_line)
- .debug_line      0x000000         0x4a build/default/production/hamza_lab3_asmb_v001.o
- .debug_line      0x00004a        0x1c2 build/default/production/display.o
+ .debug_line      0x000000         0x4a build/default/debug/hamza_lab3_asmb_v001.o
+ .debug_line      0x00004a        0x1a9 build/default/debug/display.o
 
 .debug_frame      0x000000        0x118
  *(.debug_frame)
- .debug_frame     0x000000        0x118 build/default/production/display.o
+ .debug_frame     0x000000        0x118 build/default/debug/display.o
 
 .debug_str        0x000000         0x1f
  *(.debug_str)
- .debug_str       0x000000         0x1f build/default/production/display.o
+ .debug_str       0x000000         0x1f build/default/debug/display.o
 
 .debug_loc
  *(.debug_loc)
@@ -241,7 +280,7 @@ __CONFIG1
                   0x000000         0x90
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0x90 build/default/production/display.o
+                  0x000000         0x90 build/default/debug/display.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -249,9 +288,9 @@ __CONFIG1
 .debug_aranges    0x000000         0x38
  *(.debug_aranges)
  .debug_aranges
-                  0x000000         0x20 build/default/production/hamza_lab3_asmb_v001.o
+                  0x000000         0x20 build/default/debug/hamza_lab3_asmb_v001.o
  .debug_aranges
-                  0x000020         0x18 build/default/production/display.o
+                  0x000020         0x18 build/default/debug/display.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -836,53 +875,53 @@ LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a
 END GROUP
-OUTPUT(dist/default/production/hamza_lab3_main_v001.X.production.elf elf32-pic30)
+OUTPUT(dist/default/debug/hamza_lab3_main_v001.X.debug.elf elf32-pic30)
 LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
                   0x000038         0x7e
  .debug_pubtypes
-                  0x000038         0x7e build/default/production/display.o
+                  0x000038         0x7e build/default/debug/display.o
 
 __c30_signature
                   0x0000b6         0x12
  __c30_signature
-                  0x0000b6          0x6 build/default/production/display.o
+                  0x0000b6          0x6 build/default/debug/display.o
  __c30_signature
                   0x0000bc          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(crt0_standard.o)
  __c30_signature
                   0x0000c2          0x6 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(data_init_standard.o)
 
-.ndata              0x0800          0x2
- .ndata             0x0800          0x2 build/default/production/display.o
+.ndata              0x0850          0x2
+ .ndata             0x0850          0x2 build/default/debug/display.o
 
 .config_JTAGEN    0x00abfe          0x2
  .config_JTAGEN
-                  0x00abfe          0x2 build/default/production/display.o
+                  0x00abfe          0x2 build/default/debug/display.o
 
 .config_IESO      0x00abfc          0x2
- .config_IESO     0x00abfc          0x2 build/default/production/display.o
+ .config_IESO     0x00abfc          0x2 build/default/debug/display.o
 
 .const              0x82ce         0x10 load address 0x0002ce  
- .const             0x82ce         0x10 build/default/production/display.o
+ .const             0x82ce         0x10 build/default/debug/display.o
 
-.text             0x0002de        0x496
- .text            0x0002de        0x486 build/default/production/display.o
+.text             0x0002de        0x366
+ .text            0x0002de        0x356 build/default/debug/display.o
                   0x0002de                  _init7seg
                   0x0002f8                  _showChar7seg
                   0x000452                  _delay
                   0x000470                  _test
                   0x000520                  _setup
                   0x00052e                  _main
-                  0x000684                  _initKeyPad
-                  0x0006ac                  _checkCols
-                  0x0006de                  _readKeyPadRAW
-                  0x000744                  _mapKey
- .text            0x000764         0x10 build/default/production/hamza_lab3_asmb_v001.o
-                  0x000764                  _wait_1ms
-                  0x000768                  _wait_100us
-                  0x00076e                  _wait_1us
+                  0x000554                  _initKeyPad
+                  0x00057c                  _checkCols
+                  0x0005ae                  _readKeyPadRAW
+                  0x000614                  _mapKey
+ .text            0x000634         0x10 build/default/debug/hamza_lab3_asmb_v001.o
+                  0x000634                  _wait_1ms
+                  0x000638                  _wait_100us
+                  0x00063e                  _wait_1us
 
-.dinit            0x000774          0xa
- .dinit           0x000774          0xa data_init
+.dinit            0x000644          0xa
+ .dinit           0x000644          0xa data_init
