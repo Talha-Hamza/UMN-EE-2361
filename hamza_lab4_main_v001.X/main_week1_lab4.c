@@ -65,9 +65,9 @@ int main(void) {
     initServo();
     
     while(1){
-        setServo(0.25*PR3); 
+        setServo(0.09*PR3); 
         delay_ms(1000);
-        setServo(0.75*PR3);     // this function make a pulse width a 25% duty cycle
+        setServo(0.06*PR3); 
         delay_ms(1000);
     }
     
