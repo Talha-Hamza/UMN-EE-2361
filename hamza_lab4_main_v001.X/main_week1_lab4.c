@@ -20,9 +20,8 @@
 
 
 volatile int rollover2=0;
-int currState = 1;
-int prevState = 1;
-//int set = 0.125;
+int currState = 0;
+int prevState = 0;
 
 void setup(void) {
     CLKDIVbits.RCDIV = 0;  // Set RCDIV=1:1 (default 2:1) 32MHz or FCY/2=16MHz
@@ -80,32 +79,48 @@ void __attribute__((interrupt, auto_psv)) _T2Interrupt(){
     _T2IF = 0;
 }
 
-
 int main(void) {
     
     setup();
     initServo();
     initPushButton();
     
-    double my_set = 0.125;
+    unsigned long lastPressTime = 0;
+    unsigned long secondLastPressTime = 0;
+    unsigned long lastActivityTime = 0;
+    int button_count = 0; 
+    
+    double my_set = 0.025; // START with servo moved RIGHT all the way 
     
     while(1){
         
-        //TODO
-        if (!(PORTB & 0x0100)){
-            
-            if (my_set == 0.025){
-            my_set = 0.125;}
-            else{my_set = 0.025;}               
+        if (!(PORTB & 0x0100)){ // button pressed (active low)
+            currState = 1;
+        } else {
+            currState = 0;
+        }
+        
+        if (currState == 1 && prevState == 0){ // rising edge detected
+            secondLastPressTime = lastPressTime;
+            lastPressTime = rollover2 * 62500 + TMR2;
+            lastActivityTime = lastPressTime;
+            button_count++;
+
+            if (button_count == 2) {
+                my_set = 0.125;     // move servo LEFT
+                button_count = 0;   // reset button count
             }
-//        else{
-//            my_set = 0.125;
-//        }
-        //TODO end
+        }
         
+        unsigned long currentTime = rollover2 * 62500 + TMR2;
+
+        if ((currentTime - lastActivityTime) >= (2 * 62500)) { // 2 seconds passed since last actvity
+            my_set = 0.025; // move servo RIGHT
+        }
         
-        setServo(my_set*PR3);    // Servo at Right most
-        delay_ms(20);
+        prevState = currState;
+        setServo(my_set * PR3);  
+        delay_ms(20);             
     }
     
     return 0;
