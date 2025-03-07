@@ -17,10 +17,12 @@
                                        // Fail-Safe Clock Monitor is enabled)
 #pragma config FNOSC = FRCPLL      // Oscillator Select (Fast RC Oscillator with PLL module (FRCPLL))
 
-char pressedKey = 'x';
-char lastKey = 'x';
-char secondLastKey = 'x';
 
+
+volatile int rollover2=0;
+int currState = 1;
+int prevState = 1;
+//int set = 0.125;
 
 void setup(void) {
     CLKDIVbits.RCDIV = 0;  // Set RCDIV=1:1 (default 2:1) 32MHz or FCY/2=16MHz
@@ -59,16 +61,51 @@ void setServo(int Val){
     OC1RS = Val;
 }
 
+void initPushButton(void){
+    TRISBbits.TRISB8 = 1;   // Setting RB8 as input
+    CNPU2bits.CN22PUE = 1;  // turn on pull-up for pin 17
+    
+    
+    T2CON = 0;
+    T2CONbits.TCKPS = 0b11; // pre-scaler of 256
+    PR2 = 62499;
+    _T2IF = 0;             //clear interrupt flag
+    _T2IE = 1;             //enable interrupt 
+    T2CONbits.TON = 1;
+
+}
+
+void __attribute__((interrupt, auto_psv)) _T2Interrupt(){
+     rollover2++;
+    _T2IF = 0;
+}
+
+
 int main(void) {
     
     setup();
     initServo();
+    initPushButton();
+    
+    double my_set = 0.125;
     
     while(1){
-        setServo(0.09*PR3); 
-        delay_ms(1000);
-        setServo(0.06*PR3); 
-        delay_ms(1000);
+        
+        //TODO
+        if (!(PORTB & 0x0100)){
+            
+            if (my_set == 0.025){
+            my_set = 0.125;}
+            else{my_set = 0.025;}               
+            }
+//        else{
+//            my_set = 0.125;
+//        }
+        //TODO end
+        
+        
+        setServo(my_set*PR3);    // Servo at Right most
+        delay_ms(20);
     }
     
     return 0;
