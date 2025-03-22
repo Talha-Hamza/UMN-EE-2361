@@ -17,7 +17,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main_week1_lab4.c</itemPath>
+      <itemPath>main_week2_lab4.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -28,7 +28,7 @@
         <targetDevice>PIC24FJ64GA002</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>Simulator</platformTool>
+        <platformTool>snap</platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>2.10</languageToolchainVersion>
         <platform>3</platform>
