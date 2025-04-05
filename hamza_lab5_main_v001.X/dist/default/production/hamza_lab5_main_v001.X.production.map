@@ -113,8 +113,8 @@ External Symbols in Program Memory (by address):
                   0x000406                  _lcd_setCursor
                   0x000424                  _delay_ms
                   0x000444                  _setup
-                  0x000482                  _main
-                  0x0004b0                  _lcd_printStr
+                  0x000482                  _lcd_printStr
+                  0x0004d0                  _main
 
 External Symbols in Program Memory (by name):
 
@@ -127,9 +127,9 @@ External Symbols in Program Memory (by name):
                   0x0002d2                  _lcd_cmd
                   0x0003c0                  _lcd_init
                   0x000348                  _lcd_printChar
-                  0x0004b0                  _lcd_printStr
+                  0x000482                  _lcd_printStr
                   0x000406                  _lcd_setCursor
-                  0x000482                  _main
+                  0x0004d0                  _main
                   0x000444                  _setup
 
 Memory Configuration
@@ -864,8 +864,8 @@ __c30_signature
                   0x000406                  _lcd_setCursor
                   0x000424                  _delay_ms
                   0x000444                  _setup
-                  0x000482                  _main
-                  0x0004b0                  _lcd_printStr
+                  0x000482                  _lcd_printStr
+                  0x0004d0                  _main
 
 .dinit            0x0004fe         0x14
  .dinit           0x0004fe         0x14 data_init

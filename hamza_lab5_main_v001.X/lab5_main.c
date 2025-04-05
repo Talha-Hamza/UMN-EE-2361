@@ -19,10 +19,6 @@
                                        // Fail-Safe Clock Monitor is enabled)
 #pragma config FNOSC = FRCPLL      // Oscillator Select (Fast RC Oscillator with PLL module (FRCPLL))
 
-
-void lcd_printStr(const char * str, int iterator);
-
-
 char to_print[] = {'W', 'e', 'l', 'c','o','m','e',' ','G','o','p','h','e','r','s','!','\0'};
 //char to_print[] = {'1', '2', '3', '4','5','6','7','8','9','A','B','C','D','E','F','J','\0'}; // testing purposes only
                 
@@ -45,25 +41,4 @@ int main(void) {
         delay_ms(1000);}
     
     return 0;
-}
-
-
-
-void lcd_printStr(const char *str, int start_pos) {
-    
-    int str_length = 0; // finding size of string 
-    while (str[str_length] != '\0') {
-        str_length++;
-    } 
-    
-    for (int i = 0; i < 11; i++) { // printing the length of the available space
-
-        int pos = start_pos + i;
-        if (pos >= str_length) {    // means the word has ended and we need to begin
-            pos = pos - str_length;  // wrapping around to the start of the string
-        }
-        
-        lcd_printChar(str[pos]);
-    }
-    
 }

@@ -132,6 +132,24 @@ void setup(void) {
     delay_ms(20);       
 }
 
+void lcd_printStr(const char *str, int start_pos) {
+    
+    int str_length = 0; // finding size of string 
+    while (str[str_length] != '\0') {
+        str_length++;
+    } 
+    
+    for (int i = 0; i < 11; i++) { // printing the length of the available space
+
+        int pos = start_pos + i;
+        if (pos >= str_length) {    // means the word has ended and we need to begin
+            pos = pos - str_length;  // wrapping around to the start of the string
+        }
+        
+        lcd_printChar(str[pos]);
+    }
+    
+}
 
 #define	LCD_LIBRARY_H
 
