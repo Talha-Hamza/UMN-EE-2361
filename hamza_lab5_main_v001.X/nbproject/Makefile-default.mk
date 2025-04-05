@@ -89,14 +89,14 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/lab5_main.o: lab5_main.c  .generated_files/flags/default/f9265fc4e13503ccf5b90aff3e8b4954e01537f3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/lab5_main.o: lab5_main.c  .generated_files/flags/default/60b9ef14615769a0836baf614e02e2faca7eb04f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lab5_main.o.d 
 	@${RM} ${OBJECTDIR}/lab5_main.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  lab5_main.c  -o ${OBJECTDIR}/lab5_main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/lab5_main.o.d"      -g -D__DEBUG     -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 else
-${OBJECTDIR}/lab5_main.o: lab5_main.c  .generated_files/flags/default/da00b4cc952223fac9d7e3f4dc96988c2ca1e883 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/lab5_main.o: lab5_main.c  .generated_files/flags/default/76919d97ad844e8c764074b31cb58dfc0be716ce .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lab5_main.o.d 
 	@${RM} ${OBJECTDIR}/lab5_main.o 
