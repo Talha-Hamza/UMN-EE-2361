@@ -1,5 +1,5 @@
 #include "xc.h"
-
+#include <stdio.h>
 
 // CW1: FLASH CONFIGURATION WORD 1 (see PIC24 Family Reference Manual 24.1)
 #pragma config ICS = PGx1          // Comm Channel Select (Emulator EMUC1/EMUD1 pins are shared with PGC1/PGD1)
@@ -41,7 +41,7 @@ void putVal(int item) {
 int getAvg(void) {
     int sum = 0;
     int num = 0;
-    for (int i = start; i < end; i++) {
+    for (int i = 0; i < LEN; i++) {
         sum += buf[i];
         num++;
     }
@@ -59,6 +59,7 @@ int main(void) {
     putVal(1);
     putVal(2);
     putVal(3);
+
     num = getAvg();
     return 0;
 }
