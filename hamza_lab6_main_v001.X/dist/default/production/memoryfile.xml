@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/debug/hamza_lab5_main_v001.X.debug.elf">
+  <executable name="dist/default/production/hamza_lab6_main_v001.X.production.elf">
     <memory name="data">
       <units>bytes</units>
       <length>8192</length>
-      <used>80</used>
-      <free>8112</free>
+      <used>2052</used>
+      <free>6140</free>
     </memory>
     <memory name="program">
       <units>bytes</units>
       <length>65274</length>
-      <used>1122</used>
-      <free>64152</free>
+      <used>10635</used>
+      <free>54639</free>
     </memory>
   </executable>
 </project>

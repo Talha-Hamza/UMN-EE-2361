@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"C:\Users\Hamza\Documents\UMN-EE-coursework\Spring 2025\EE2361\lab\hamza_lab6_main_v001.X\hamza_lab6_main_v001.c
