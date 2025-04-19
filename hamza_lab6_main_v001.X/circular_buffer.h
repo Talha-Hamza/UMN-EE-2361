@@ -52,4 +52,3 @@ return sum / count;
 #endif
 
 #endif	/* CIRCULAR_BUFFER_H */
-

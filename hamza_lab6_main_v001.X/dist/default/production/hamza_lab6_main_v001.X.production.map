@@ -1450,6 +1450,13 @@ __c30_signature
  .bss               0x1002          0x2 c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-elf.a(__errno_location.XX_o)
                     0x1002                  ___errno_val
 
+.config_JTAGEN    0x00abfe          0x2
+ .config_JTAGEN
+                  0x00abfe          0x2 build/default/production/hamza_lab6_main_v001.o
+
+.config_IESO      0x00abfc          0x2
+ .config_IESO     0x00abfc          0x2 build/default/production/hamza_lab6_main_v001.o
+
 .ivt._ADC1Interrupt
                   0x00002e          0x2
  .ivt._ADC1Interrupt

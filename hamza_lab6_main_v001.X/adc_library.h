@@ -63,4 +63,3 @@ void TMR1_init(void) {
     T1CONbits.TON = 1;
 }
 #endif	/* ADC_LIBRARY_H */
-
