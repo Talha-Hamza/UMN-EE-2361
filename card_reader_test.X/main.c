@@ -39,9 +39,14 @@ void setup() {
     
     //Provide initialization for PIC24 pins and their connections to the RFID device
     
+    //Provide Pinout Information
     SPI1STATbits.SPIEN = 0; //Disable SPI1 Module for setup
+    TRISBbits.TRISB12 = 1;  // MISO is input
+    TRISBbits.TRISB15 = 0; // Set CS to output
+    TRISBbits.TRISB14 = 0; //Set CLK pin to output
+    TRISBbits.TRISB11 = 0; //Set MOSI pin to output
     
-    //Configure Pin out
+    //Configure Internal Devices
     __builtin_write_OSCCONL(OSCCON & 0xbf); // unlock PPS
     RPINR20bits.SDI1R = 0b01100; //Set MISO (data in) to RP12 aka Pin 23
     RPOR5bits.RP11R = 0b00111; //Set MOSI (data out) to RP11 aka Pin 
@@ -49,17 +54,30 @@ void setup() {
     __builtin_write_OSCCONL(OSCCON | 0x40); // lock PPS
     
     
+    //This could be dangerous -- Delete if things are breaking
+//    SPI1STATbits.SPITBF = 1;
+//    SPI1STATbits.SPIRBF = 1;
+    
+    
+    //This could also be dangerous -- Delete if things are breaking
+//    SPI1CON1bits.DISSCK = 0;
+//    SPI1CON1bits.DISSDO = 0;
+    
     //Configure the Internal SPI1 device
     SPI1CON1 = 0; //Reset Control Register To Default
     SPI1CON1bits.MSTEN = 1; //Master Mode Enable
+    //SPI1CON1bits.MODE16 = 0; //Transmit over 8-bit mode
     SPI1CON1bits.CKP = 0; //Clock Idle Low
     SPI1CON1bits.CKE = 1; //Data change on falling edge
-    SPI1CON1bits.PPRE = 0b10; //Primary Prescalar to 16:1 to ensure 1Mhz operation
-    SPI1CON1bits.SPRE = 0b111; //Secondary Prescalar to 1:1 to ensure 1Mhz operation
+    SPI1CON1bits.SMP = 0; //Sample Input Data at Middle of Output Time
+    SPI1CON1bits.PPRE = 0b10; //Primary Prescalar to 4:1 to ensure 4Mhz operation
+    SPI1CON1bits.SPRE = 0b111; //Secondary Prescalar to 1:1 to ensure 4Mhz operation
+    SPI1CON1bits.SSEN = 0; //Slave select is not used by the module -- Pin is controlled by port function
+    SPI1STATbits.SPIROV = 0;
     SPI1CON2 = 0; //Not dealing with SPI1CON2 so we will just reset it to default
     
-    TRISBbits.TRISB12 = 1;  // MISO is input
-    TRISBbits.TRISB15 = 0; // Set CS to output
+    
+    
     LATBbits.LATB15 = 1; //Set CS to active low
     
     _SPI1IF = 0; //Reset SPI1 Interrupt Flag to 0
@@ -69,147 +87,77 @@ void setup() {
     SPI1STATbits.SPIEN = 1; //Re-Enable SPI Module
 }
 
-void write(int val, int address) {
-    // Wait until SPI is completely ready
-    while(SPI1STATbits.SPITBF);  // Wait until transmit buffer is empty
-    
-    LATBbits.LATB15 = 0;         // Activate CS (active low)
-    delay_ms(1);                 // Critical delay for CS settling
-
-    
-    // Clear any pending receive data
-    if(SPI1STATbits.SPIRBF) {
-        int dummy = SPI1BUF;
-    }
-    
-    // Send address (write command)
-    SPI1BUF = ((address << 1) & 0x7E);  // Format address for write
-    
-    while(!SPI1STATbits.SPIRBF);        // Wait for transmission complete
-    int dummy = SPI1BUF;                // Clear receive buffer
-    delay_ms(1);
-    // Send data
-    SPI1BUF = (val);
-    while(!SPI1STATbits.SPIRBF);        // Wait for transmission complete
-    dummy = SPI1BUF;                    // Clear receive buffer
-    
-
-    
-    delay_ms(1);                 // Small delay before releasing CS
-    LATBbits.LATB15 = 1;         // Deactivate CS
+unsigned char encoder_SPI1_transfer(unsigned char data) {
+    SPI1BUF = data;
+    while(!SPI1STATbits.SPIRBF);
+    //SPI1STATbits.SPIRBF = 0;
+    return SPI1BUF;
 }
 
+void write(unsigned char address, unsigned char data) {
 
+    LATBbits.LATB15 = 0;
+    encoder_SPI1_transfer((address << 1) & 0x7E);
+    encoder_SPI1_transfer(data);
+    LATBbits.LATB15 = 1;
+}
 
-//OLD WRITE
-//void write(int address, int val) {
-//    LATBbits.LATB15 = 0; //activate the RC522 device (active low)         
-//    SPI1BUF = (address << 1) & 0x7E; //shift address left for padding and mask it for write mode
-//    while (!SPI1STATbits.SPIRBF); //wait for SPI comm to finish
-//    SPI1BUF = val; //write value to device via SPI               
-//    while (!SPI1STATbits.SPIRBF); //wait for SPI comm to finish
-//    LATBbits.LATB15 = 1; //deactivate the RC522 device (active low)      
-//}
-
-int read(int address) {
-    delay_ms(10);
-//    address = ((address << 1) & 0x7E);  // Format address for write
-
-    
-    LATBbits.LATB15 = 0; //activate the RC522 device (active low)
-    SPI1BUF = (((address << 1) & 0x7E) | 0x80); //shift address left for padding and mask it for read mode
-    while (!SPI1STATbits.SPIRBF); //wait for SPI comm to finish
-    int temp = SPI1BUF; //dummy read to clear buffer  
-    while (!SPI1STATbits.SPIRBF);    
-    SPI1BUF = (((address << 1) & 0x7E) | 0x80); //dummy write to get to the next bit  
-        SPI1BUF = 0x00;  
-
-    while (!SPI1STATbits.SPIRBF); //wait for SPI comm to finish
-    int val = SPI1BUF; //retrieve register value from buffer
-    LATBbits.LATB15 = 1; //deactivate the RC522 device (active low)  
-    
-    return val; //return value read
+unsigned char read(int address) {
+    unsigned char tracker_read; 
+    LATBbits.LATB15 = 0;
+    encoder_SPI1_transfer(((address << 1) & 0x07E) | 0x80);
+    tracker_read = encoder_SPI1_transfer(0x00); //Dummy Read: Might not be necessary.
+    LATBbits.LATB15 = 1;
+    return tracker_read;
 }
 
 void rc522_init() {
-//    write(0x01, 0x0F); //write soft reset command to command register
-//    delay_ms(100);
-//    
-//    // 2. Enable Antenna
-//    write(0x14, 0x63);  // write TX1/TX2 enable command to the TxControl register
-//    delay_ms(5);
-//    write(0x26, 0xE0);  // write Gain = 48dB to the RF config register
-//    
-//    // 3. Set Timeouts
-//    write(0x2A, 0x9D);  // Set timeout timer to auto start
-//    write(0x2B, 0x3E);  // TPrescaler = 2kHz => 1/2kHz = 0.5ms
-//    write(0x2C, 30);    // 30*0.5ms = 15ms timeout
-//    
-//    // 4. Clear FIFO
-//    write(0x0A, 0x80);  // Flush FIFO
+    write(0x01, 0x0F); //write soft reset command to command register
+    //delay_ms(100);
+    
+    // 2. Enable Antenna
+    write(0x14, 0x33);  // write TX1/TX2 enable command to the TxControl register
+    //delay_ms(5);
+    write(0x26, 0x70);  // write Gain = 48dB to the RF config register
+    
+    // 3. Set Timeouts
+    write(0x2A, 0x9D);  // Set timeout timer to auto start
+    write(0x2B, 0x3E);  // TPrescaler = 2kHz => 1/2kHz = 0.5ms
+    write(0x2C, 30);    // 30*0.5ms = 15ms timeout
+    
+    // 4. Clear FIFO
+    write(0x0A, 0x80);  // Flush FIFO
     ;
 }
 
 int tag_polling() {
-//    write(0x01, 0x00); //enter idle mode (clear active command)
-//    write(0x04, 0x00); //clear all interrupt flags
-//    write(0x09, 0x26);  // load REQA command into FIFO buffer (needed to comm with RFID tags)
-//    write(0x01, 0x0C);  // execute that command as a Transceive command (activates the antenna)
+    write(0x01, 0x00); //enter idle mode (clear active command)
+    write(0x04, 0x00); //clear all interrupt flags
+    write(0x09, 0x26);  // Request command to read RFID (0x26 for REQA, 0x52 for Wake)
+    write(0x01, 0x0C);  // execute that command as a Transceive command (activates the antenna)
 //    
-//    if (read(0x04) & 0x20) { //check confirmation register bit
-//        return 1;
-//    }
+    if (read(0x04) & 0x20) { //check confirmation register bit
+        return 1;
+    }
 //    return 0;
     return 0;
 }
 
-void test_spi_basic() {
-    LATBbits.LATB15 = 0; // CS low
-    SPI1BUF = 0xAA; // Send test pattern
-    while(!SPI1STATbits.SPIRBF); // Wait for completion
-    int received = SPI1BUF;
-    LATBbits.LATB15 = 1; // CS high
-    
-    // Check loopback (short MISO to MOSI for test)
-    if(received != 0xAA) {
-        while(1); // Hang here if SPI fails (check with debugger)
-    }
-}
-
-
 
 int main(void) {
-    int tag_detect = 0; //track if tag has been detected
+    unsigned char tag_detect = 0; //track if tag has been detected
     setup(); //see setup
-    write(12, 4);
-    read(4);
+    rc522_init();
+    //read(0x04);
+    while(1){
+        if(tag_polling()) {
+            tag_detect = 1;
+            delay_ms(500);
+        }
+        else {
+            tag_detect = 0;
+        }
+        delay_ms(200);
+    }
+    return 0;
 }
-    
-//    //test_spi_basic();
-//    
-//    
-//        // Add this after setup() but before rc522_init():
-//    // Test SPI by writing/reading a known register
-////    write(0x01, 0x00);  // Write to CommandReg
-////    if(read(0x01) != 0x00) {  // Should read back 0x00 (idle state)
-////        tag_detect = 0;
-////    }
-////    else {
-////        tag_detect = 1;
-////    }
-////    
-////    
-//    rc522_init(); //see rc522_init
-//    
-//    while(1){
-//        if(tag_polling()) {
-//             tag_detect = 1;
-//            delay_ms(500);
-//        }
-//        else {
-//            tag_detect = 0;
-//        }
-//        delay_ms(200);
-//    }
-//    
-//    return 0;
