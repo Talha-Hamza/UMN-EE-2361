@@ -45,6 +45,7 @@ void setup() {
     TRISBbits.TRISB15 = 0; // Set CS to output
     TRISBbits.TRISB14 = 0; //Set CLK pin to output
     TRISBbits.TRISB11 = 0; //Set MOSI pin to output
+    TRISBbits.TRISB13 = 0; //This is output for a test signal
     
     //Configure Internal Devices
     __builtin_write_OSCCONL(OSCCON & 0xbf); // unlock PPS
@@ -102,14 +103,45 @@ void write(unsigned char address, unsigned char data) {
     LATBbits.LATB15 = 1;
 }
 
-unsigned char read(int address) {
-    unsigned char tracker_read; 
+unsigned char read(unsigned char address) {
     LATBbits.LATB15 = 0;
-    encoder_SPI1_transfer(((address << 1) & 0x07E) | 0x80);
-    tracker_read = encoder_SPI1_transfer(0x00); //Dummy Read: Might not be necessary.
+    SPI1BUF = (((address << 1) & 0x7E) | 0x80);
+    while(!SPI1STATbits.SPIRBF);
+    unsigned char temp = SPI1BUF;
+    SPI1BUF = 0x00;
+    while(!SPI1STATbits.SPIRBF);
     LATBbits.LATB15 = 1;
-    return tracker_read;
+    return SPI1BUF;
 }
+
+
+
+//unsigned char read(int address) {
+//    unsigned char tracker_read; 
+//    LATBbits.LATB15 = 0;
+//    encoder_SPI1_transfer(((address << 1) & 0x07E) | 0x80);
+//    tracker_read = encoder_SPI1_transfer(0x00); //Dummy Read: Might not be necessary.
+//    LATBbits.LATB15 = 1;
+//    return tracker_read;
+//}
+
+//unsigned char MFRC_readRegister(unsigned char address) {
+//    _LATB15 = 0; // CS low
+//    
+//    // Send address with MSB=1 for read
+//    SPI1BUF = ((address & 0x3F) << 1) | 0x80;
+//    while(!SPI1STATbits.SPIRBF); // Wait for completion
+//    unsigned char dummy = SPI1BUF; // Clear buffer
+//    
+//    // Send dummy byte to receive data
+//    SPI1BUF = 0x00;
+//    while(!SPI1STATbits.SPIRBF);
+//    unsigned char value = SPI1BUF;
+//    
+//    _LATB15 = 1; // CS high
+//    
+//    return value;
+//}
 
 void rc522_init() {
     write(0x01, 0x0F); //write soft reset command to command register
@@ -143,21 +175,44 @@ int tag_polling() {
     return 0;
 }
 
+volatile unsigned char tag_detect = 0; //track if tag has been detected
+volatile unsigned char irq1 = 0; 
+volatile unsigned char irq2 = 0; 
 
 int main(void) {
-    unsigned char tag_detect = 0; //track if tag has been detected
-    setup(); //see setup
+    setup();
     rc522_init();
-    //read(0x04);
-    while(1){
-        if(tag_polling()) {
-            tag_detect = 1;
-            delay_ms(500);
-        }
-        else {
-            tag_detect = 0;
-        }
-        delay_ms(200);
+//    write(0x04, 0x07);
+
+    while(1) {
+        write(0x09, 0x43);
+        irq1 = read(0x04); //returns 0x07 ideally
+        irq2 = read(0x04); //returns 0x07 ideally
+//        delay_ms(100);
     }
+
+    
+//    while(1) {
+//        // Check ComIrqReg (0x04) for interrupts
+//        irq1 = MFRC_readRegister(0x04);
+//        
+//        // If you want to detect tags, use proper polling:
+//        write(0x01, 0x00); // Idle mode
+//        write(0x02, 0x00); // Clear IRq
+//        write(0x09, 0x26); // Send REQA
+//        write(0x01, 0x0C); // Transceive
+//        
+////        delay_ms(100);
+//        
+//        // Check if we got a response
+//        irq1 = MFRC_readRegister(0x09);
+//        if(irq1 & 0x20) { // RxIRq bit
+//            tag_detect = 1;
+//        } else {
+//            tag_detect = 0;
+//        }
+//        
+////        delay_ms(200);
+//    }
     return 0;
 }

@@ -1,20 +1,1000 @@
-
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 Pre:DebugReadTargetMemory
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 Payload
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 FileRegs
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 862
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 863
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 Length = 2
-49977 1745970001026 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC24FJ64GA002 Payload End
-49977 1745970001026 XXXX 1745970001026, Thread 49977: XXXX 1745970001026, Entering Thread 49977: Commands::runScriptWithUpload, script name = ReadRAM  
-49977 1745970001026 XXXX 1745970001026, Thread 49977: XXXX 1745970001026, Entering Thread 49977: ToolCommUsb::readTransfer, sideData is 0x28 bytes long, transferDataLength is 0x2 bytes long  
-49977 1745970001038 XXXX 1745970001038, Thread 49977: com.Send returned false 
-49977 1745970001038 XXXX 1745970001038, Thread 49977: readTransfer: exception after writeHeaderAndGetAck null 
-49977 1745970001038 XXXX 1745970001038, Thread 49977: XXXX 1745970001038, Entering Thread 49977: ToolCommUsb::recoverFromProtocolError, type = NO_SCRIPT  
-49977 1745970001038 XXXX 1745970001038, Thread 49977: Send Abort Script Engine Command 
-49977 1745970001038 XXXX 1745970001038, Thread 49977: XXXX 1745970001038, Entering Thread 49977: ToolCommUsb::killScriptEngine  
-49977 1745970001039 XXXX 1745970001039, Thread 49977: com.Send returned false 
-49977 1745970001039 XXXX 1745970001039, Thread 49977: Failed sending Abort Script Engine Command. Set nuclear option = true 
-49977 1745970001039 XXXX 1745970001039, Thread 49977: About to nuke 
-49977 1745970001039 XXXX 1745970001039, Thread 49977: XXXX 1745970001039, Entering Thread 49977: ToolCommUsb::nuclearOption  
-49977 1745970001039 XXXX 1745970001039, Thread 49977: com.Send returned false 
+35083 1746051517537 XXXX 1746051517537, Thread 35083: XXXX 1746051517537, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051517637 XXXX 1746051517637, Thread 35083: XXXX 1746051517637, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051517638 XXXX 1746051517638, Thread 35083: XXXX 1746051517638, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051517737 XXXX 1746051517737, Thread 35083: XXXX 1746051517737, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051517739 XXXX 1746051517739, Thread 35083: XXXX 1746051517739, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051517837 XXXX 1746051517837, Thread 35083: XXXX 1746051517837, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051517838 XXXX 1746051517838, Thread 35083: XXXX 1746051517838, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051517938 XXXX 1746051517938, Thread 35083: XXXX 1746051517938, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051517941 XXXX 1746051517941, Thread 35083: XXXX 1746051517941, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518039 XXXX 1746051518039, Thread 35083: XXXX 1746051518039, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518040 XXXX 1746051518040, Thread 35083: XXXX 1746051518040, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518140 XXXX 1746051518140, Thread 35083: XXXX 1746051518140, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518141 XXXX 1746051518141, Thread 35083: XXXX 1746051518141, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518242 XXXX 1746051518242, Thread 35083: XXXX 1746051518242, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518244 XXXX 1746051518244, Thread 35083: XXXX 1746051518244, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518342 XXXX 1746051518342, Thread 35083: XXXX 1746051518342, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518343 XXXX 1746051518343, Thread 35083: XXXX 1746051518343, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518443 XXXX 1746051518443, Thread 35083: XXXX 1746051518443, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518444 XXXX 1746051518444, Thread 35083: XXXX 1746051518444, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518544 XXXX 1746051518544, Thread 35083: XXXX 1746051518544, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518544 XXXX 1746051518544, Thread 35083: XXXX 1746051518544, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518645 XXXX 1746051518645, Thread 35083: XXXX 1746051518645, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518646 XXXX 1746051518646, Thread 35083: XXXX 1746051518646, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518747 XXXX 1746051518747, Thread 35083: XXXX 1746051518747, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518749 XXXX 1746051518749, Thread 35083: XXXX 1746051518749, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518850 XXXX 1746051518850, Thread 35083: XXXX 1746051518850, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518851 XXXX 1746051518851, Thread 35083: XXXX 1746051518851, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051518951 XXXX 1746051518951, Thread 35083: XXXX 1746051518951, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051518952 XXXX 1746051518952, Thread 35083: XXXX 1746051518952, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519053 XXXX 1746051519053, Thread 35083: XXXX 1746051519053, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519054 XXXX 1746051519054, Thread 35083: XXXX 1746051519054, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519153 XXXX 1746051519153, Thread 35083: XXXX 1746051519153, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519155 XXXX 1746051519155, Thread 35083: XXXX 1746051519155, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519253 XXXX 1746051519253, Thread 35083: XXXX 1746051519253, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519254 XXXX 1746051519254, Thread 35083: XXXX 1746051519254, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519356 XXXX 1746051519356, Thread 35083: XXXX 1746051519356, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519356 XXXX 1746051519356, Thread 35083: XXXX 1746051519356, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519455 XXXX 1746051519455, Thread 35083: XXXX 1746051519455, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519456 XXXX 1746051519456, Thread 35083: XXXX 1746051519456, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519555 XXXX 1746051519555, Thread 35083: XXXX 1746051519555, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519556 XXXX 1746051519556, Thread 35083: XXXX 1746051519556, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519658 XXXX 1746051519658, Thread 35083: XXXX 1746051519658, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519659 XXXX 1746051519659, Thread 35083: XXXX 1746051519659, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519757 XXXX 1746051519757, Thread 35083: XXXX 1746051519757, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519758 XXXX 1746051519758, Thread 35083: XXXX 1746051519758, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519860 XXXX 1746051519860, Thread 35083: XXXX 1746051519860, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519860 XXXX 1746051519860, Thread 35083: XXXX 1746051519860, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051519961 XXXX 1746051519961, Thread 35083: XXXX 1746051519961, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051519962 XXXX 1746051519962, Thread 35083: XXXX 1746051519962, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520063 XXXX 1746051520063, Thread 35083: XXXX 1746051520063, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520064 XXXX 1746051520064, Thread 35083: XXXX 1746051520064, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520163 XXXX 1746051520163, Thread 35083: XXXX 1746051520163, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520164 XXXX 1746051520164, Thread 35083: XXXX 1746051520164, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520264 XXXX 1746051520264, Thread 35083: XXXX 1746051520264, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520265 XXXX 1746051520265, Thread 35083: XXXX 1746051520265, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520364 XXXX 1746051520364, Thread 35083: XXXX 1746051520364, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520365 XXXX 1746051520365, Thread 35083: XXXX 1746051520365, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520466 XXXX 1746051520466, Thread 35083: XXXX 1746051520466, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520466 XXXX 1746051520466, Thread 35083: XXXX 1746051520466, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520567 XXXX 1746051520567, Thread 35083: XXXX 1746051520567, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520569 XXXX 1746051520569, Thread 35083: XXXX 1746051520569, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520669 XXXX 1746051520669, Thread 35083: XXXX 1746051520669, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520670 XXXX 1746051520670, Thread 35083: XXXX 1746051520670, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520771 XXXX 1746051520771, Thread 35083: XXXX 1746051520771, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520771 XXXX 1746051520771, Thread 35083: XXXX 1746051520771, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520871 XXXX 1746051520871, Thread 35083: XXXX 1746051520871, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520872 XXXX 1746051520872, Thread 35083: XXXX 1746051520872, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051520971 XXXX 1746051520971, Thread 35083: XXXX 1746051520971, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051520972 XXXX 1746051520972, Thread 35083: XXXX 1746051520972, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521074 XXXX 1746051521074, Thread 35083: XXXX 1746051521074, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521075 XXXX 1746051521075, Thread 35083: XXXX 1746051521075, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521174 XXXX 1746051521174, Thread 35083: XXXX 1746051521174, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521176 XXXX 1746051521176, Thread 35083: XXXX 1746051521176, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521276 XXXX 1746051521276, Thread 35083: XXXX 1746051521276, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521277 XXXX 1746051521277, Thread 35083: XXXX 1746051521277, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521378 XXXX 1746051521378, Thread 35083: XXXX 1746051521378, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521379 XXXX 1746051521379, Thread 35083: XXXX 1746051521379, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521479 XXXX 1746051521479, Thread 35083: XXXX 1746051521479, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521480 XXXX 1746051521480, Thread 35083: XXXX 1746051521480, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521581 XXXX 1746051521581, Thread 35083: XXXX 1746051521581, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521582 XXXX 1746051521582, Thread 35083: XXXX 1746051521582, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521684 XXXX 1746051521684, Thread 35083: XXXX 1746051521684, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521684 XXXX 1746051521684, Thread 35083: XXXX 1746051521684, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521783 XXXX 1746051521783, Thread 35083: XXXX 1746051521783, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521784 XXXX 1746051521784, Thread 35083: XXXX 1746051521784, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521884 XXXX 1746051521884, Thread 35083: XXXX 1746051521884, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521886 XXXX 1746051521886, Thread 35083: XXXX 1746051521886, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051521986 XXXX 1746051521986, Thread 35083: XXXX 1746051521986, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051521987 XXXX 1746051521987, Thread 35083: XXXX 1746051521987, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522089 XXXX 1746051522089, Thread 35083: XXXX 1746051522089, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522090 XXXX 1746051522090, Thread 35083: XXXX 1746051522090, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522189 XXXX 1746051522189, Thread 35083: XXXX 1746051522189, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522190 XXXX 1746051522190, Thread 35083: XXXX 1746051522190, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522290 XXXX 1746051522290, Thread 35083: XXXX 1746051522290, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522292 XXXX 1746051522292, Thread 35083: XXXX 1746051522292, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522392 XXXX 1746051522392, Thread 35083: XXXX 1746051522392, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522392 XXXX 1746051522392, Thread 35083: XXXX 1746051522392, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522493 XXXX 1746051522493, Thread 35083: XXXX 1746051522493, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522494 XXXX 1746051522494, Thread 35083: XXXX 1746051522494, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522595 XXXX 1746051522595, Thread 35083: XXXX 1746051522595, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522596 XXXX 1746051522596, Thread 35083: XXXX 1746051522596, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522696 XXXX 1746051522696, Thread 35083: XXXX 1746051522696, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522697 XXXX 1746051522697, Thread 35083: XXXX 1746051522697, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522796 XXXX 1746051522796, Thread 35083: XXXX 1746051522796, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522798 XXXX 1746051522798, Thread 35083: XXXX 1746051522798, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051522898 XXXX 1746051522898, Thread 35083: XXXX 1746051522898, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051522898 XXXX 1746051522898, Thread 35083: XXXX 1746051522898, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523000 XXXX 1746051523000, Thread 35083: XXXX 1746051523000, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523000 XXXX 1746051523000, Thread 35083: XXXX 1746051523000, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523101 XXXX 1746051523101, Thread 35083: XXXX 1746051523101, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523103 XXXX 1746051523103, Thread 35083: XXXX 1746051523102, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523201 XXXX 1746051523201, Thread 35083: XXXX 1746051523201, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523202 XXXX 1746051523202, Thread 35083: XXXX 1746051523202, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523303 XXXX 1746051523303, Thread 35083: XXXX 1746051523303, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523304 XXXX 1746051523304, Thread 35083: XXXX 1746051523304, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523405 XXXX 1746051523405, Thread 35083: XXXX 1746051523405, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523406 XXXX 1746051523406, Thread 35083: XXXX 1746051523406, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523505 XXXX 1746051523505, Thread 35083: XXXX 1746051523505, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523507 XXXX 1746051523507, Thread 35083: XXXX 1746051523507, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523607 XXXX 1746051523607, Thread 35083: XXXX 1746051523607, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523607 XXXX 1746051523607, Thread 35083: XXXX 1746051523607, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523709 XXXX 1746051523708, Thread 35083: XXXX 1746051523708, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523709 XXXX 1746051523709, Thread 35083: XXXX 1746051523709, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523810 XXXX 1746051523810, Thread 35083: XXXX 1746051523810, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523812 XXXX 1746051523812, Thread 35083: XXXX 1746051523812, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051523911 XXXX 1746051523911, Thread 35083: XXXX 1746051523911, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051523913 XXXX 1746051523913, Thread 35083: XXXX 1746051523913, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524013 XXXX 1746051524013, Thread 35083: XXXX 1746051524013, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524014 XXXX 1746051524014, Thread 35083: XXXX 1746051524014, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524113 XXXX 1746051524113, Thread 35083: XXXX 1746051524113, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524114 XXXX 1746051524114, Thread 35083: XXXX 1746051524114, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524215 XXXX 1746051524215, Thread 35083: XXXX 1746051524215, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524217 XXXX 1746051524217, Thread 35083: XXXX 1746051524217, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524316 XXXX 1746051524316, Thread 35083: XXXX 1746051524316, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524318 XXXX 1746051524318, Thread 35083: XXXX 1746051524318, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524417 XXXX 1746051524417, Thread 35083: XXXX 1746051524417, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524418 XXXX 1746051524418, Thread 35083: XXXX 1746051524418, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524518 XXXX 1746051524518, Thread 35083: XXXX 1746051524518, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524519 XXXX 1746051524519, Thread 35083: XXXX 1746051524519, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524620 XXXX 1746051524620, Thread 35083: XXXX 1746051524620, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524621 XXXX 1746051524621, Thread 35083: XXXX 1746051524621, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524720 XXXX 1746051524720, Thread 35083: XXXX 1746051524720, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524721 XXXX 1746051524721, Thread 35083: XXXX 1746051524721, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524820 XXXX 1746051524820, Thread 35083: XXXX 1746051524820, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524822 XXXX 1746051524822, Thread 35083: XXXX 1746051524822, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051524922 XXXX 1746051524922, Thread 35083: XXXX 1746051524922, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051524923 XXXX 1746051524923, Thread 35083: XXXX 1746051524923, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525023 XXXX 1746051525023, Thread 35083: XXXX 1746051525023, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525024 XXXX 1746051525024, Thread 35083: XXXX 1746051525024, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525126 XXXX 1746051525126, Thread 35083: XXXX 1746051525126, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525127 XXXX 1746051525127, Thread 35083: XXXX 1746051525127, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525226 XXXX 1746051525226, Thread 35083: XXXX 1746051525226, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525227 XXXX 1746051525227, Thread 35083: XXXX 1746051525227, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525327 XXXX 1746051525327, Thread 35083: XXXX 1746051525327, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525329 XXXX 1746051525329, Thread 35083: XXXX 1746051525329, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525428 XXXX 1746051525428, Thread 35083: XXXX 1746051525428, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525429 XXXX 1746051525429, Thread 35083: XXXX 1746051525429, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525529 XXXX 1746051525529, Thread 35083: XXXX 1746051525529, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525529 XXXX 1746051525529, Thread 35083: XXXX 1746051525529, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525629 XXXX 1746051525629, Thread 35083: XXXX 1746051525629, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525630 XXXX 1746051525630, Thread 35083: XXXX 1746051525630, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525734 XXXX 1746051525734, Thread 35083: XXXX 1746051525734, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525735 XXXX 1746051525735, Thread 35083: XXXX 1746051525735, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525836 XXXX 1746051525836, Thread 35083: XXXX 1746051525836, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525837 XXXX 1746051525837, Thread 35083: XXXX 1746051525837, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051525938 XXXX 1746051525938, Thread 35083: XXXX 1746051525938, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051525939 XXXX 1746051525939, Thread 35083: XXXX 1746051525939, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526038 XXXX 1746051526038, Thread 35083: XXXX 1746051526038, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526039 XXXX 1746051526039, Thread 35083: XXXX 1746051526039, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526138 XXXX 1746051526138, Thread 35083: XXXX 1746051526138, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526139 XXXX 1746051526139, Thread 35083: XXXX 1746051526139, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526240 XXXX 1746051526240, Thread 35083: XXXX 1746051526240, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526241 XXXX 1746051526241, Thread 35083: XXXX 1746051526241, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526341 XXXX 1746051526341, Thread 35083: XXXX 1746051526341, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526342 XXXX 1746051526342, Thread 35083: XXXX 1746051526342, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526444 XXXX 1746051526444, Thread 35083: XXXX 1746051526444, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526445 XXXX 1746051526445, Thread 35083: XXXX 1746051526445, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526544 XXXX 1746051526544, Thread 35083: XXXX 1746051526544, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526544 XXXX 1746051526544, Thread 35083: XXXX 1746051526544, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526645 XXXX 1746051526645, Thread 35083: XXXX 1746051526645, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526646 XXXX 1746051526646, Thread 35083: XXXX 1746051526646, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526746 XXXX 1746051526746, Thread 35083: XXXX 1746051526746, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526748 XXXX 1746051526748, Thread 35083: XXXX 1746051526748, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526847 XXXX 1746051526847, Thread 35083: XXXX 1746051526847, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526848 XXXX 1746051526848, Thread 35083: XXXX 1746051526848, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051526949 XXXX 1746051526949, Thread 35083: XXXX 1746051526949, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051526950 XXXX 1746051526950, Thread 35083: XXXX 1746051526950, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527050 XXXX 1746051527050, Thread 35083: XXXX 1746051527050, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527052 XXXX 1746051527052, Thread 35083: XXXX 1746051527052, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527153 XXXX 1746051527153, Thread 35083: XXXX 1746051527153, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527154 XXXX 1746051527154, Thread 35083: XXXX 1746051527154, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527254 XXXX 1746051527254, Thread 35083: XXXX 1746051527254, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527255 XXXX 1746051527255, Thread 35083: XXXX 1746051527255, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527354 XXXX 1746051527354, Thread 35083: XXXX 1746051527354, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527356 XXXX 1746051527356, Thread 35083: XXXX 1746051527356, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527455 XXXX 1746051527455, Thread 35083: XXXX 1746051527455, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527456 XXXX 1746051527456, Thread 35083: XXXX 1746051527456, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527556 XXXX 1746051527556, Thread 35083: XXXX 1746051527556, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527557 XXXX 1746051527557, Thread 35083: XXXX 1746051527557, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527656 XXXX 1746051527656, Thread 35083: XXXX 1746051527656, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527657 XXXX 1746051527657, Thread 35083: XXXX 1746051527657, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527756 XXXX 1746051527756, Thread 35083: XXXX 1746051527756, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527757 XXXX 1746051527757, Thread 35083: XXXX 1746051527757, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527857 XXXX 1746051527857, Thread 35083: XXXX 1746051527857, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527858 XXXX 1746051527858, Thread 35083: XXXX 1746051527858, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051527959 XXXX 1746051527959, Thread 35083: XXXX 1746051527959, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051527960 XXXX 1746051527960, Thread 35083: XXXX 1746051527960, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528060 XXXX 1746051528060, Thread 35083: XXXX 1746051528060, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528061 XXXX 1746051528061, Thread 35083: XXXX 1746051528061, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528162 XXXX 1746051528162, Thread 35083: XXXX 1746051528162, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528162 XXXX 1746051528162, Thread 35083: XXXX 1746051528162, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528264 XXXX 1746051528264, Thread 35083: XXXX 1746051528264, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528265 XXXX 1746051528265, Thread 35083: XXXX 1746051528265, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528367 XXXX 1746051528367, Thread 35083: XXXX 1746051528367, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528368 XXXX 1746051528368, Thread 35083: XXXX 1746051528368, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528469 XXXX 1746051528469, Thread 35083: XXXX 1746051528469, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528470 XXXX 1746051528470, Thread 35083: XXXX 1746051528470, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528569 XXXX 1746051528569, Thread 35083: XXXX 1746051528569, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528571 XXXX 1746051528571, Thread 35083: XXXX 1746051528571, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528671 XXXX 1746051528671, Thread 35083: XXXX 1746051528671, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528672 XXXX 1746051528672, Thread 35083: XXXX 1746051528672, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528773 XXXX 1746051528773, Thread 35083: XXXX 1746051528773, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528774 XXXX 1746051528774, Thread 35083: XXXX 1746051528774, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528877 XXXX 1746051528877, Thread 35083: XXXX 1746051528877, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528878 XXXX 1746051528878, Thread 35083: XXXX 1746051528878, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051528979 XXXX 1746051528979, Thread 35083: XXXX 1746051528979, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051528979 XXXX 1746051528979, Thread 35083: XXXX 1746051528979, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529081 XXXX 1746051529081, Thread 35083: XXXX 1746051529081, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529082 XXXX 1746051529082, Thread 35083: XXXX 1746051529082, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529181 XXXX 1746051529181, Thread 35083: XXXX 1746051529181, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529181 XXXX 1746051529181, Thread 35083: XXXX 1746051529181, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529281 XXXX 1746051529281, Thread 35083: XXXX 1746051529281, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529282 XXXX 1746051529282, Thread 35083: XXXX 1746051529282, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529383 XXXX 1746051529383, Thread 35083: XXXX 1746051529383, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529384 XXXX 1746051529384, Thread 35083: XXXX 1746051529384, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529485 XXXX 1746051529485, Thread 35083: XXXX 1746051529485, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529486 XXXX 1746051529486, Thread 35083: XXXX 1746051529486, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529586 XXXX 1746051529586, Thread 35083: XXXX 1746051529586, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529588 XXXX 1746051529588, Thread 35083: XXXX 1746051529588, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529686 XXXX 1746051529686, Thread 35083: XXXX 1746051529686, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529688 XXXX 1746051529688, Thread 35083: XXXX 1746051529688, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529788 XXXX 1746051529788, Thread 35083: XXXX 1746051529788, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529790 XXXX 1746051529790, Thread 35083: XXXX 1746051529790, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529889 XXXX 1746051529889, Thread 35083: XXXX 1746051529889, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529890 XXXX 1746051529890, Thread 35083: XXXX 1746051529890, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051529992 XXXX 1746051529992, Thread 35083: XXXX 1746051529991, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051529993 XXXX 1746051529993, Thread 35083: XXXX 1746051529993, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530093 XXXX 1746051530093, Thread 35083: XXXX 1746051530093, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530094 XXXX 1746051530094, Thread 35083: XXXX 1746051530094, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530192 XXXX 1746051530192, Thread 35083: XXXX 1746051530192, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530193 XXXX 1746051530193, Thread 35083: XXXX 1746051530193, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530294 XXXX 1746051530294, Thread 35083: XXXX 1746051530294, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530296 XXXX 1746051530295, Thread 35083: XXXX 1746051530295, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530394 XXXX 1746051530394, Thread 35083: XXXX 1746051530394, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530395 XXXX 1746051530395, Thread 35083: XXXX 1746051530395, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530496 XXXX 1746051530496, Thread 35083: XXXX 1746051530496, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530496 XXXX 1746051530496, Thread 35083: XXXX 1746051530496, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530602 XXXX 1746051530602, Thread 35083: XXXX 1746051530601, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530603 XXXX 1746051530603, Thread 35083: XXXX 1746051530603, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530702 XXXX 1746051530701, Thread 35083: XXXX 1746051530701, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530702 XXXX 1746051530702, Thread 35083: XXXX 1746051530702, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530803 XXXX 1746051530803, Thread 35083: XXXX 1746051530803, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530803 XXXX 1746051530803, Thread 35083: XXXX 1746051530803, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051530903 XXXX 1746051530903, Thread 35083: XXXX 1746051530903, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051530904 XXXX 1746051530904, Thread 35083: XXXX 1746051530904, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531003 XXXX 1746051531003, Thread 35083: XXXX 1746051531003, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531004 XXXX 1746051531004, Thread 35083: XXXX 1746051531004, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531104 XXXX 1746051531104, Thread 35083: XXXX 1746051531104, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531105 XXXX 1746051531105, Thread 35083: XXXX 1746051531105, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531206 XXXX 1746051531206, Thread 35083: XXXX 1746051531206, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531207 XXXX 1746051531207, Thread 35083: XXXX 1746051531207, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531308 XXXX 1746051531308, Thread 35083: XXXX 1746051531308, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531309 XXXX 1746051531309, Thread 35083: XXXX 1746051531309, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531409 XXXX 1746051531409, Thread 35083: XXXX 1746051531409, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531409 XXXX 1746051531409, Thread 35083: XXXX 1746051531409, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531510 XXXX 1746051531510, Thread 35083: XXXX 1746051531510, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531511 XXXX 1746051531511, Thread 35083: XXXX 1746051531511, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531610 XXXX 1746051531610, Thread 35083: XXXX 1746051531610, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531611 XXXX 1746051531611, Thread 35083: XXXX 1746051531611, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531716 XXXX 1746051531716, Thread 35083: XXXX 1746051531716, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531717 XXXX 1746051531717, Thread 35083: XXXX 1746051531717, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531818 XXXX 1746051531818, Thread 35083: XXXX 1746051531818, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531818 XXXX 1746051531818, Thread 35083: XXXX 1746051531818, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051531921 XXXX 1746051531921, Thread 35083: XXXX 1746051531921, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051531922 XXXX 1746051531922, Thread 35083: XXXX 1746051531922, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532022 XXXX 1746051532022, Thread 35083: XXXX 1746051532022, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532024 XXXX 1746051532024, Thread 35083: XXXX 1746051532024, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532125 XXXX 1746051532125, Thread 35083: XXXX 1746051532125, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532127 XXXX 1746051532127, Thread 35083: XXXX 1746051532127, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532226 XXXX 1746051532226, Thread 35083: XXXX 1746051532226, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532226 XXXX 1746051532226, Thread 35083: XXXX 1746051532226, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532328 XXXX 1746051532328, Thread 35083: XXXX 1746051532328, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532330 XXXX 1746051532330, Thread 35083: XXXX 1746051532330, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532428 XXXX 1746051532428, Thread 35083: XXXX 1746051532428, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532429 XXXX 1746051532429, Thread 35083: XXXX 1746051532429, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532529 XXXX 1746051532529, Thread 35083: XXXX 1746051532529, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532529 XXXX 1746051532529, Thread 35083: XXXX 1746051532529, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532632 XXXX 1746051532632, Thread 35083: XXXX 1746051532632, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532633 XXXX 1746051532633, Thread 35083: XXXX 1746051532633, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532734 XXXX 1746051532734, Thread 35083: XXXX 1746051532734, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532735 XXXX 1746051532735, Thread 35083: XXXX 1746051532735, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532835 XXXX 1746051532835, Thread 35083: XXXX 1746051532835, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532836 XXXX 1746051532836, Thread 35083: XXXX 1746051532836, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051532936 XXXX 1746051532936, Thread 35083: XXXX 1746051532936, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051532937 XXXX 1746051532937, Thread 35083: XXXX 1746051532937, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533036 XXXX 1746051533036, Thread 35083: XXXX 1746051533036, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533037 XXXX 1746051533037, Thread 35083: XXXX 1746051533037, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533136 XXXX 1746051533136, Thread 35083: XXXX 1746051533136, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533137 XXXX 1746051533137, Thread 35083: XXXX 1746051533137, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533238 XXXX 1746051533238, Thread 35083: XXXX 1746051533238, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533239 XXXX 1746051533239, Thread 35083: XXXX 1746051533239, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533340 XXXX 1746051533340, Thread 35083: XXXX 1746051533340, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533341 XXXX 1746051533341, Thread 35083: XXXX 1746051533341, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533441 XXXX 1746051533441, Thread 35083: XXXX 1746051533441, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533442 XXXX 1746051533442, Thread 35083: XXXX 1746051533442, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533541 XXXX 1746051533541, Thread 35083: XXXX 1746051533541, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533552 XXXX 1746051533552, Thread 35083: XXXX 1746051533552, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533642 XXXX 1746051533642, Thread 35083: XXXX 1746051533642, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533643 XXXX 1746051533643, Thread 35083: XXXX 1746051533643, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533742 XXXX 1746051533742, Thread 35083: XXXX 1746051533742, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533743 XXXX 1746051533743, Thread 35083: XXXX 1746051533743, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533844 XXXX 1746051533844, Thread 35083: XXXX 1746051533844, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533845 XXXX 1746051533845, Thread 35083: XXXX 1746051533845, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051533945 XXXX 1746051533945, Thread 35083: XXXX 1746051533945, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051533946 XXXX 1746051533946, Thread 35083: XXXX 1746051533946, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534046 XXXX 1746051534046, Thread 35083: XXXX 1746051534046, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534047 XXXX 1746051534047, Thread 35083: XXXX 1746051534047, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534147 XXXX 1746051534147, Thread 35083: XXXX 1746051534147, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534148 XXXX 1746051534148, Thread 35083: XXXX 1746051534148, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534248 XXXX 1746051534248, Thread 35083: XXXX 1746051534248, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534249 XXXX 1746051534249, Thread 35083: XXXX 1746051534249, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534348 XXXX 1746051534348, Thread 35083: XXXX 1746051534348, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534349 XXXX 1746051534349, Thread 35083: XXXX 1746051534349, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534450 XXXX 1746051534450, Thread 35083: XXXX 1746051534450, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534452 XXXX 1746051534452, Thread 35083: XXXX 1746051534452, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534551 XXXX 1746051534551, Thread 35083: XXXX 1746051534551, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534552 XXXX 1746051534552, Thread 35083: XXXX 1746051534552, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534653 XXXX 1746051534653, Thread 35083: XXXX 1746051534653, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534654 XXXX 1746051534654, Thread 35083: XXXX 1746051534654, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534753 XXXX 1746051534753, Thread 35083: XXXX 1746051534753, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534754 XXXX 1746051534754, Thread 35083: XXXX 1746051534754, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534854 XXXX 1746051534854, Thread 35083: XXXX 1746051534854, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534855 XXXX 1746051534855, Thread 35083: XXXX 1746051534855, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051534955 XXXX 1746051534955, Thread 35083: XXXX 1746051534955, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051534956 XXXX 1746051534956, Thread 35083: XXXX 1746051534956, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535057 XXXX 1746051535057, Thread 35083: XXXX 1746051535057, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535058 XXXX 1746051535058, Thread 35083: XXXX 1746051535058, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535157 XXXX 1746051535157, Thread 35083: XXXX 1746051535157, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535159 XXXX 1746051535159, Thread 35083: XXXX 1746051535159, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535257 XXXX 1746051535257, Thread 35083: XXXX 1746051535257, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535258 XXXX 1746051535258, Thread 35083: XXXX 1746051535258, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535357 XXXX 1746051535357, Thread 35083: XXXX 1746051535357, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535358 XXXX 1746051535358, Thread 35083: XXXX 1746051535358, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535458 XXXX 1746051535458, Thread 35083: XXXX 1746051535458, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535459 XXXX 1746051535459, Thread 35083: XXXX 1746051535459, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535560 XXXX 1746051535560, Thread 35083: XXXX 1746051535560, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535562 XXXX 1746051535562, Thread 35083: XXXX 1746051535562, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535661 XXXX 1746051535661, Thread 35083: XXXX 1746051535661, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535661 XXXX 1746051535661, Thread 35083: XXXX 1746051535661, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535761 XXXX 1746051535761, Thread 35083: XXXX 1746051535761, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535763 XXXX 1746051535763, Thread 35083: XXXX 1746051535763, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535863 XXXX 1746051535863, Thread 35083: XXXX 1746051535863, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535864 XXXX 1746051535864, Thread 35083: XXXX 1746051535864, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051535965 XXXX 1746051535965, Thread 35083: XXXX 1746051535965, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051535966 XXXX 1746051535966, Thread 35083: XXXX 1746051535966, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536065 XXXX 1746051536065, Thread 35083: XXXX 1746051536065, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536066 XXXX 1746051536066, Thread 35083: XXXX 1746051536066, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536165 XXXX 1746051536165, Thread 35083: XXXX 1746051536165, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536166 XXXX 1746051536166, Thread 35083: XXXX 1746051536166, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536268 XXXX 1746051536268, Thread 35083: XXXX 1746051536268, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536269 XXXX 1746051536269, Thread 35083: XXXX 1746051536269, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536368 XXXX 1746051536368, Thread 35083: XXXX 1746051536368, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536369 XXXX 1746051536369, Thread 35083: XXXX 1746051536369, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536469 XXXX 1746051536469, Thread 35083: XXXX 1746051536469, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536471 XXXX 1746051536471, Thread 35083: XXXX 1746051536471, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536571 XXXX 1746051536571, Thread 35083: XXXX 1746051536571, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536572 XXXX 1746051536572, Thread 35083: XXXX 1746051536572, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536671 XXXX 1746051536671, Thread 35083: XXXX 1746051536671, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536672 XXXX 1746051536672, Thread 35083: XXXX 1746051536672, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536772 XXXX 1746051536772, Thread 35083: XXXX 1746051536772, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536774 XXXX 1746051536774, Thread 35083: XXXX 1746051536774, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536874 XXXX 1746051536874, Thread 35083: XXXX 1746051536874, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536876 XXXX 1746051536876, Thread 35083: XXXX 1746051536876, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051536975 XXXX 1746051536975, Thread 35083: XXXX 1746051536975, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051536977 XXXX 1746051536977, Thread 35083: XXXX 1746051536977, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537076 XXXX 1746051537076, Thread 35083: XXXX 1746051537076, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537077 XXXX 1746051537077, Thread 35083: XXXX 1746051537077, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537178 XXXX 1746051537178, Thread 35083: XXXX 1746051537178, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537179 XXXX 1746051537179, Thread 35083: XXXX 1746051537179, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537280 XXXX 1746051537280, Thread 35083: XXXX 1746051537280, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537281 XXXX 1746051537281, Thread 35083: XXXX 1746051537281, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537381 XXXX 1746051537381, Thread 35083: XXXX 1746051537381, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537382 XXXX 1746051537382, Thread 35083: XXXX 1746051537382, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537482 XXXX 1746051537482, Thread 35083: XXXX 1746051537482, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537483 XXXX 1746051537483, Thread 35083: XXXX 1746051537483, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537583 XXXX 1746051537583, Thread 35083: XXXX 1746051537583, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537584 XXXX 1746051537584, Thread 35083: XXXX 1746051537584, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537684 XXXX 1746051537684, Thread 35083: XXXX 1746051537683, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537684 XXXX 1746051537684, Thread 35083: XXXX 1746051537684, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537785 XXXX 1746051537785, Thread 35083: XXXX 1746051537785, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537786 XXXX 1746051537786, Thread 35083: XXXX 1746051537786, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537887 XXXX 1746051537887, Thread 35083: XXXX 1746051537887, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537889 XXXX 1746051537889, Thread 35083: XXXX 1746051537889, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051537988 XXXX 1746051537988, Thread 35083: XXXX 1746051537988, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051537989 XXXX 1746051537989, Thread 35083: XXXX 1746051537989, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538089 XXXX 1746051538089, Thread 35083: XXXX 1746051538089, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538090 XXXX 1746051538090, Thread 35083: XXXX 1746051538090, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538189 XXXX 1746051538189, Thread 35083: XXXX 1746051538189, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538190 XXXX 1746051538190, Thread 35083: XXXX 1746051538190, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538291 XXXX 1746051538291, Thread 35083: XXXX 1746051538291, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538292 XXXX 1746051538292, Thread 35083: XXXX 1746051538292, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538392 XXXX 1746051538392, Thread 35083: XXXX 1746051538392, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538393 XXXX 1746051538393, Thread 35083: XXXX 1746051538393, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538494 XXXX 1746051538494, Thread 35083: XXXX 1746051538494, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538495 XXXX 1746051538495, Thread 35083: XXXX 1746051538495, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538594 XXXX 1746051538594, Thread 35083: XXXX 1746051538594, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538595 XXXX 1746051538595, Thread 35083: XXXX 1746051538595, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538695 XXXX 1746051538695, Thread 35083: XXXX 1746051538695, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538697 XXXX 1746051538697, Thread 35083: XXXX 1746051538697, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538796 XXXX 1746051538796, Thread 35083: XXXX 1746051538796, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538798 XXXX 1746051538798, Thread 35083: XXXX 1746051538798, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051538899 XXXX 1746051538899, Thread 35083: XXXX 1746051538899, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051538900 XXXX 1746051538900, Thread 35083: XXXX 1746051538900, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539000 XXXX 1746051539000, Thread 35083: XXXX 1746051539000, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539001 XXXX 1746051539001, Thread 35083: XXXX 1746051539001, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539101 XXXX 1746051539101, Thread 35083: XXXX 1746051539101, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539102 XXXX 1746051539102, Thread 35083: XXXX 1746051539102, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539201 XXXX 1746051539201, Thread 35083: XXXX 1746051539201, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539203 XXXX 1746051539203, Thread 35083: XXXX 1746051539203, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539301 XXXX 1746051539301, Thread 35083: XXXX 1746051539301, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539302 XXXX 1746051539302, Thread 35083: XXXX 1746051539302, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539403 XXXX 1746051539403, Thread 35083: XXXX 1746051539403, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539404 XXXX 1746051539404, Thread 35083: XXXX 1746051539404, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539504 XXXX 1746051539504, Thread 35083: XXXX 1746051539504, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539506 XXXX 1746051539506, Thread 35083: XXXX 1746051539506, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539607 XXXX 1746051539607, Thread 35083: XXXX 1746051539607, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539608 XXXX 1746051539608, Thread 35083: XXXX 1746051539608, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539709 XXXX 1746051539709, Thread 35083: XXXX 1746051539709, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539711 XXXX 1746051539711, Thread 35083: XXXX 1746051539711, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539810 XXXX 1746051539810, Thread 35083: XXXX 1746051539810, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539812 XXXX 1746051539812, Thread 35083: XXXX 1746051539812, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051539911 XXXX 1746051539911, Thread 35083: XXXX 1746051539911, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051539912 XXXX 1746051539912, Thread 35083: XXXX 1746051539912, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540013 XXXX 1746051540013, Thread 35083: XXXX 1746051540013, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540014 XXXX 1746051540014, Thread 35083: XXXX 1746051540014, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540115 XXXX 1746051540115, Thread 35083: XXXX 1746051540115, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540116 XXXX 1746051540116, Thread 35083: XXXX 1746051540116, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540217 XXXX 1746051540217, Thread 35083: XXXX 1746051540217, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540218 XXXX 1746051540218, Thread 35083: XXXX 1746051540218, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540319 XXXX 1746051540319, Thread 35083: XXXX 1746051540319, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540320 XXXX 1746051540320, Thread 35083: XXXX 1746051540320, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540420 XXXX 1746051540420, Thread 35083: XXXX 1746051540420, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540421 XXXX 1746051540421, Thread 35083: XXXX 1746051540421, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540520 XXXX 1746051540520, Thread 35083: XXXX 1746051540520, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540520 XXXX 1746051540520, Thread 35083: XXXX 1746051540520, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540621 XXXX 1746051540621, Thread 35083: XXXX 1746051540621, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540622 XXXX 1746051540622, Thread 35083: XXXX 1746051540622, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540722 XXXX 1746051540722, Thread 35083: XXXX 1746051540722, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540723 XXXX 1746051540723, Thread 35083: XXXX 1746051540723, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540822 XXXX 1746051540822, Thread 35083: XXXX 1746051540822, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540823 XXXX 1746051540823, Thread 35083: XXXX 1746051540823, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051540925 XXXX 1746051540925, Thread 35083: XXXX 1746051540925, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051540927 XXXX 1746051540927, Thread 35083: XXXX 1746051540927, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541026 XXXX 1746051541026, Thread 35083: XXXX 1746051541026, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541027 XXXX 1746051541027, Thread 35083: XXXX 1746051541027, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541128 XXXX 1746051541128, Thread 35083: XXXX 1746051541128, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541129 XXXX 1746051541129, Thread 35083: XXXX 1746051541129, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541228 XXXX 1746051541228, Thread 35083: XXXX 1746051541228, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541229 XXXX 1746051541229, Thread 35083: XXXX 1746051541229, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541328 XXXX 1746051541328, Thread 35083: XXXX 1746051541328, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541329 XXXX 1746051541329, Thread 35083: XXXX 1746051541329, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541429 XXXX 1746051541429, Thread 35083: XXXX 1746051541429, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541431 XXXX 1746051541431, Thread 35083: XXXX 1746051541431, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541530 XXXX 1746051541530, Thread 35083: XXXX 1746051541530, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541531 XXXX 1746051541531, Thread 35083: XXXX 1746051541531, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541631 XXXX 1746051541631, Thread 35083: XXXX 1746051541631, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541632 XXXX 1746051541632, Thread 35083: XXXX 1746051541632, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541733 XXXX 1746051541733, Thread 35083: XXXX 1746051541733, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541735 XXXX 1746051541735, Thread 35083: XXXX 1746051541735, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541834 XXXX 1746051541834, Thread 35083: XXXX 1746051541834, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541836 XXXX 1746051541836, Thread 35083: XXXX 1746051541836, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051541935 XXXX 1746051541935, Thread 35083: XXXX 1746051541935, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051541936 XXXX 1746051541936, Thread 35083: XXXX 1746051541936, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542037 XXXX 1746051542037, Thread 35083: XXXX 1746051542037, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542038 XXXX 1746051542038, Thread 35083: XXXX 1746051542038, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542140 XXXX 1746051542140, Thread 35083: XXXX 1746051542140, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542141 XXXX 1746051542141, Thread 35083: XXXX 1746051542141, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542241 XXXX 1746051542241, Thread 35083: XXXX 1746051542241, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542242 XXXX 1746051542242, Thread 35083: XXXX 1746051542242, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542342 XXXX 1746051542342, Thread 35083: XXXX 1746051542341, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542343 XXXX 1746051542343, Thread 35083: XXXX 1746051542343, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542443 XXXX 1746051542443, Thread 35083: XXXX 1746051542443, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542444 XXXX 1746051542444, Thread 35083: XXXX 1746051542444, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542546 XXXX 1746051542546, Thread 35083: XXXX 1746051542546, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542547 XXXX 1746051542547, Thread 35083: XXXX 1746051542547, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542646 XXXX 1746051542646, Thread 35083: XXXX 1746051542646, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542647 XXXX 1746051542647, Thread 35083: XXXX 1746051542647, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542747 XXXX 1746051542747, Thread 35083: XXXX 1746051542747, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542748 XXXX 1746051542748, Thread 35083: XXXX 1746051542748, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542847 XXXX 1746051542847, Thread 35083: XXXX 1746051542847, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542848 XXXX 1746051542848, Thread 35083: XXXX 1746051542848, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051542950 XXXX 1746051542950, Thread 35083: XXXX 1746051542950, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051542951 XXXX 1746051542951, Thread 35083: XXXX 1746051542951, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543052 XXXX 1746051543052, Thread 35083: XXXX 1746051543052, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543053 XXXX 1746051543053, Thread 35083: XXXX 1746051543053, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543153 XXXX 1746051543153, Thread 35083: XXXX 1746051543153, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543154 XXXX 1746051543154, Thread 35083: XXXX 1746051543154, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543254 XXXX 1746051543254, Thread 35083: XXXX 1746051543254, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543255 XXXX 1746051543255, Thread 35083: XXXX 1746051543255, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543356 XXXX 1746051543356, Thread 35083: XXXX 1746051543356, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543358 XXXX 1746051543358, Thread 35083: XXXX 1746051543358, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543457 XXXX 1746051543457, Thread 35083: XXXX 1746051543457, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543459 XXXX 1746051543459, Thread 35083: XXXX 1746051543459, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543559 XXXX 1746051543559, Thread 35083: XXXX 1746051543559, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543560 XXXX 1746051543560, Thread 35083: XXXX 1746051543560, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543660 XXXX 1746051543660, Thread 35083: XXXX 1746051543660, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543662 XXXX 1746051543662, Thread 35083: XXXX 1746051543662, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543761 XXXX 1746051543761, Thread 35083: XXXX 1746051543761, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543763 XXXX 1746051543763, Thread 35083: XXXX 1746051543763, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543864 XXXX 1746051543864, Thread 35083: XXXX 1746051543864, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543865 XXXX 1746051543865, Thread 35083: XXXX 1746051543865, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051543965 XXXX 1746051543965, Thread 35083: XXXX 1746051543965, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051543966 XXXX 1746051543966, Thread 35083: XXXX 1746051543966, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544065 XXXX 1746051544065, Thread 35083: XXXX 1746051544065, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544067 XXXX 1746051544067, Thread 35083: XXXX 1746051544067, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544166 XXXX 1746051544166, Thread 35083: XXXX 1746051544166, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544167 XXXX 1746051544167, Thread 35083: XXXX 1746051544167, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544267 XXXX 1746051544267, Thread 35083: XXXX 1746051544267, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544268 XXXX 1746051544268, Thread 35083: XXXX 1746051544268, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544368 XXXX 1746051544368, Thread 35083: XXXX 1746051544368, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544369 XXXX 1746051544369, Thread 35083: XXXX 1746051544369, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544469 XXXX 1746051544469, Thread 35083: XXXX 1746051544469, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544470 XXXX 1746051544470, Thread 35083: XXXX 1746051544470, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544570 XXXX 1746051544570, Thread 35083: XXXX 1746051544570, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544571 XXXX 1746051544571, Thread 35083: XXXX 1746051544571, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544670 XXXX 1746051544670, Thread 35083: XXXX 1746051544670, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544671 XXXX 1746051544671, Thread 35083: XXXX 1746051544671, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544771 XXXX 1746051544771, Thread 35083: XXXX 1746051544771, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544773 XXXX 1746051544773, Thread 35083: XXXX 1746051544773, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544871 XXXX 1746051544871, Thread 35083: XXXX 1746051544871, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544873 XXXX 1746051544873, Thread 35083: XXXX 1746051544873, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051544973 XXXX 1746051544973, Thread 35083: XXXX 1746051544973, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051544975 XXXX 1746051544975, Thread 35083: XXXX 1746051544975, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545076 XXXX 1746051545076, Thread 35083: XXXX 1746051545076, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545076 XXXX 1746051545076, Thread 35083: XXXX 1746051545076, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545175 XXXX 1746051545175, Thread 35083: XXXX 1746051545175, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545177 XXXX 1746051545177, Thread 35083: XXXX 1746051545177, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545277 XXXX 1746051545277, Thread 35083: XXXX 1746051545277, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545278 XXXX 1746051545278, Thread 35083: XXXX 1746051545278, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545377 XXXX 1746051545377, Thread 35083: XXXX 1746051545377, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545378 XXXX 1746051545378, Thread 35083: XXXX 1746051545378, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545478 XXXX 1746051545478, Thread 35083: XXXX 1746051545478, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545479 XXXX 1746051545479, Thread 35083: XXXX 1746051545479, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545579 XXXX 1746051545579, Thread 35083: XXXX 1746051545579, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545580 XXXX 1746051545580, Thread 35083: XXXX 1746051545580, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545681 XXXX 1746051545681, Thread 35083: XXXX 1746051545681, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545682 XXXX 1746051545682, Thread 35083: XXXX 1746051545682, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545782 XXXX 1746051545782, Thread 35083: XXXX 1746051545782, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545783 XXXX 1746051545783, Thread 35083: XXXX 1746051545783, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545882 XXXX 1746051545882, Thread 35083: XXXX 1746051545882, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545884 XXXX 1746051545884, Thread 35083: XXXX 1746051545884, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051545984 XXXX 1746051545984, Thread 35083: XXXX 1746051545984, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051545985 XXXX 1746051545985, Thread 35083: XXXX 1746051545985, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546086 XXXX 1746051546086, Thread 35083: XXXX 1746051546086, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546087 XXXX 1746051546087, Thread 35083: XXXX 1746051546087, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546186 XXXX 1746051546186, Thread 35083: XXXX 1746051546186, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546187 XXXX 1746051546187, Thread 35083: XXXX 1746051546187, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546287 XXXX 1746051546287, Thread 35083: XXXX 1746051546287, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546288 XXXX 1746051546288, Thread 35083: XXXX 1746051546288, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546389 XXXX 1746051546389, Thread 35083: XXXX 1746051546389, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546390 XXXX 1746051546390, Thread 35083: XXXX 1746051546390, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546491 XXXX 1746051546491, Thread 35083: XXXX 1746051546491, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546492 XXXX 1746051546492, Thread 35083: XXXX 1746051546492, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546591 XXXX 1746051546591, Thread 35083: XXXX 1746051546591, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546592 XXXX 1746051546592, Thread 35083: XXXX 1746051546592, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546691 XXXX 1746051546691, Thread 35083: XXXX 1746051546691, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546692 XXXX 1746051546692, Thread 35083: XXXX 1746051546692, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546793 XXXX 1746051546793, Thread 35083: XXXX 1746051546793, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546795 XXXX 1746051546795, Thread 35083: XXXX 1746051546795, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546893 XXXX 1746051546893, Thread 35083: XXXX 1746051546893, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546894 XXXX 1746051546894, Thread 35083: XXXX 1746051546894, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051546995 XXXX 1746051546995, Thread 35083: XXXX 1746051546995, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051546996 XXXX 1746051546996, Thread 35083: XXXX 1746051546996, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547096 XXXX 1746051547096, Thread 35083: XXXX 1746051547096, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547098 XXXX 1746051547098, Thread 35083: XXXX 1746051547098, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547198 XXXX 1746051547198, Thread 35083: XXXX 1746051547198, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547200 XXXX 1746051547200, Thread 35083: XXXX 1746051547200, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547299 XXXX 1746051547299, Thread 35083: XXXX 1746051547299, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547301 XXXX 1746051547301, Thread 35083: XXXX 1746051547301, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547401 XXXX 1746051547401, Thread 35083: XXXX 1746051547401, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547402 XXXX 1746051547402, Thread 35083: XXXX 1746051547402, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547502 XXXX 1746051547502, Thread 35083: XXXX 1746051547502, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547503 XXXX 1746051547503, Thread 35083: XXXX 1746051547503, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547604 XXXX 1746051547604, Thread 35083: XXXX 1746051547604, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547606 XXXX 1746051547606, Thread 35083: XXXX 1746051547606, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547705 XXXX 1746051547705, Thread 35083: XXXX 1746051547705, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547706 XXXX 1746051547706, Thread 35083: XXXX 1746051547706, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547806 XXXX 1746051547806, Thread 35083: XXXX 1746051547806, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547808 XXXX 1746051547808, Thread 35083: XXXX 1746051547808, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051547906 XXXX 1746051547906, Thread 35083: XXXX 1746051547906, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051547907 XXXX 1746051547907, Thread 35083: XXXX 1746051547907, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548008 XXXX 1746051548008, Thread 35083: XXXX 1746051548008, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548009 XXXX 1746051548009, Thread 35083: XXXX 1746051548009, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548108 XXXX 1746051548108, Thread 35083: XXXX 1746051548108, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548109 XXXX 1746051548109, Thread 35083: XXXX 1746051548109, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548209 XXXX 1746051548209, Thread 35083: XXXX 1746051548209, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548210 XXXX 1746051548210, Thread 35083: XXXX 1746051548210, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548309 XXXX 1746051548309, Thread 35083: XXXX 1746051548309, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548310 XXXX 1746051548310, Thread 35083: XXXX 1746051548310, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548411 XXXX 1746051548411, Thread 35083: XXXX 1746051548411, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548412 XXXX 1746051548412, Thread 35083: XXXX 1746051548412, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548511 XXXX 1746051548511, Thread 35083: XXXX 1746051548511, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548512 XXXX 1746051548512, Thread 35083: XXXX 1746051548512, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548613 XXXX 1746051548613, Thread 35083: XXXX 1746051548613, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548614 XXXX 1746051548614, Thread 35083: XXXX 1746051548614, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548714 XXXX 1746051548714, Thread 35083: XXXX 1746051548714, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548716 XXXX 1746051548716, Thread 35083: XXXX 1746051548716, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548817 XXXX 1746051548817, Thread 35083: XXXX 1746051548817, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548818 XXXX 1746051548818, Thread 35083: XXXX 1746051548818, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051548917 XXXX 1746051548917, Thread 35083: XXXX 1746051548917, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051548918 XXXX 1746051548918, Thread 35083: XXXX 1746051548918, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549018 XXXX 1746051549018, Thread 35083: XXXX 1746051549018, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549020 XXXX 1746051549020, Thread 35083: XXXX 1746051549020, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549119 XXXX 1746051549119, Thread 35083: XXXX 1746051549119, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549121 XXXX 1746051549121, Thread 35083: XXXX 1746051549121, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549221 XXXX 1746051549221, Thread 35083: XXXX 1746051549221, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549222 XXXX 1746051549222, Thread 35083: XXXX 1746051549222, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549323 XXXX 1746051549323, Thread 35083: XXXX 1746051549323, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549325 XXXX 1746051549325, Thread 35083: XXXX 1746051549325, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549423 XXXX 1746051549423, Thread 35083: XXXX 1746051549423, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549425 XXXX 1746051549425, Thread 35083: XXXX 1746051549425, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549524 XXXX 1746051549524, Thread 35083: XXXX 1746051549524, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549525 XXXX 1746051549525, Thread 35083: XXXX 1746051549525, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549625 XXXX 1746051549625, Thread 35083: XXXX 1746051549625, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549627 XXXX 1746051549627, Thread 35083: XXXX 1746051549627, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549727 XXXX 1746051549727, Thread 35083: XXXX 1746051549727, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549729 XXXX 1746051549729, Thread 35083: XXXX 1746051549729, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549829 XXXX 1746051549829, Thread 35083: XXXX 1746051549829, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549830 XXXX 1746051549830, Thread 35083: XXXX 1746051549830, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051549930 XXXX 1746051549930, Thread 35083: XXXX 1746051549930, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051549931 XXXX 1746051549931, Thread 35083: XXXX 1746051549931, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550032 XXXX 1746051550032, Thread 35083: XXXX 1746051550032, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550034 XXXX 1746051550034, Thread 35083: XXXX 1746051550034, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550133 XXXX 1746051550133, Thread 35083: XXXX 1746051550132, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550134 XXXX 1746051550134, Thread 35083: XXXX 1746051550134, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550235 XXXX 1746051550235, Thread 35083: XXXX 1746051550235, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550236 XXXX 1746051550236, Thread 35083: XXXX 1746051550236, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550335 XXXX 1746051550335, Thread 35083: XXXX 1746051550335, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550337 XXXX 1746051550337, Thread 35083: XXXX 1746051550337, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550435 XXXX 1746051550435, Thread 35083: XXXX 1746051550435, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550436 XXXX 1746051550436, Thread 35083: XXXX 1746051550436, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550536 XXXX 1746051550536, Thread 35083: XXXX 1746051550536, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550537 XXXX 1746051550537, Thread 35083: XXXX 1746051550537, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550639 XXXX 1746051550639, Thread 35083: XXXX 1746051550639, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550640 XXXX 1746051550640, Thread 35083: XXXX 1746051550640, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550740 XXXX 1746051550740, Thread 35083: XXXX 1746051550740, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550742 XXXX 1746051550742, Thread 35083: XXXX 1746051550742, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550843 XXXX 1746051550843, Thread 35083: XXXX 1746051550843, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550844 XXXX 1746051550844, Thread 35083: XXXX 1746051550844, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051550945 XXXX 1746051550945, Thread 35083: XXXX 1746051550945, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051550947 XXXX 1746051550947, Thread 35083: XXXX 1746051550947, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551046 XXXX 1746051551046, Thread 35083: XXXX 1746051551046, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551048 XXXX 1746051551048, Thread 35083: XXXX 1746051551048, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551147 XXXX 1746051551147, Thread 35083: XXXX 1746051551147, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551148 XXXX 1746051551148, Thread 35083: XXXX 1746051551148, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551247 XXXX 1746051551247, Thread 35083: XXXX 1746051551247, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551248 XXXX 1746051551248, Thread 35083: XXXX 1746051551248, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551348 XXXX 1746051551348, Thread 35083: XXXX 1746051551348, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551349 XXXX 1746051551349, Thread 35083: XXXX 1746051551349, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551448 XXXX 1746051551448, Thread 35083: XXXX 1746051551448, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551449 XXXX 1746051551449, Thread 35083: XXXX 1746051551449, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551550 XXXX 1746051551550, Thread 35083: XXXX 1746051551550, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551551 XXXX 1746051551551, Thread 35083: XXXX 1746051551551, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551652 XXXX 1746051551652, Thread 35083: XXXX 1746051551651, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551653 XXXX 1746051551653, Thread 35083: XXXX 1746051551653, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551753 XXXX 1746051551753, Thread 35083: XXXX 1746051551753, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551753 XXXX 1746051551753, Thread 35083: XXXX 1746051551753, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551853 XXXX 1746051551853, Thread 35083: XXXX 1746051551853, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551855 XXXX 1746051551855, Thread 35083: XXXX 1746051551855, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051551955 XXXX 1746051551955, Thread 35083: XXXX 1746051551955, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051551956 XXXX 1746051551956, Thread 35083: XXXX 1746051551956, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552058 XXXX 1746051552058, Thread 35083: XXXX 1746051552058, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552059 XXXX 1746051552059, Thread 35083: XXXX 1746051552059, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552158 XXXX 1746051552158, Thread 35083: XXXX 1746051552158, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552159 XXXX 1746051552159, Thread 35083: XXXX 1746051552159, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552259 XXXX 1746051552259, Thread 35083: XXXX 1746051552259, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552260 XXXX 1746051552260, Thread 35083: XXXX 1746051552260, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552359 XXXX 1746051552359, Thread 35083: XXXX 1746051552359, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552360 XXXX 1746051552360, Thread 35083: XXXX 1746051552360, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552460 XXXX 1746051552460, Thread 35083: XXXX 1746051552460, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552461 XXXX 1746051552461, Thread 35083: XXXX 1746051552461, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552560 XXXX 1746051552560, Thread 35083: XXXX 1746051552560, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552562 XXXX 1746051552562, Thread 35083: XXXX 1746051552562, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552663 XXXX 1746051552663, Thread 35083: XXXX 1746051552663, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552664 XXXX 1746051552664, Thread 35083: XXXX 1746051552664, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552763 XXXX 1746051552763, Thread 35083: XXXX 1746051552762, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552764 XXXX 1746051552764, Thread 35083: XXXX 1746051552764, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552864 XXXX 1746051552864, Thread 35083: XXXX 1746051552864, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552865 XXXX 1746051552865, Thread 35083: XXXX 1746051552865, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051552965 XXXX 1746051552965, Thread 35083: XXXX 1746051552965, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051552966 XXXX 1746051552966, Thread 35083: XXXX 1746051552966, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553066 XXXX 1746051553066, Thread 35083: XXXX 1746051553066, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553067 XXXX 1746051553067, Thread 35083: XXXX 1746051553067, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553166 XXXX 1746051553166, Thread 35083: XXXX 1746051553166, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553168 XXXX 1746051553168, Thread 35083: XXXX 1746051553168, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553268 XXXX 1746051553268, Thread 35083: XXXX 1746051553268, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553270 XXXX 1746051553270, Thread 35083: XXXX 1746051553270, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553369 XXXX 1746051553369, Thread 35083: XXXX 1746051553369, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553370 XXXX 1746051553370, Thread 35083: XXXX 1746051553370, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553470 XXXX 1746051553470, Thread 35083: XXXX 1746051553470, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553471 XXXX 1746051553471, Thread 35083: XXXX 1746051553471, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553572 XXXX 1746051553572, Thread 35083: XXXX 1746051553572, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553574 XXXX 1746051553574, Thread 35083: XXXX 1746051553574, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553675 XXXX 1746051553675, Thread 35083: XXXX 1746051553675, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553676 XXXX 1746051553676, Thread 35083: XXXX 1746051553676, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553775 XXXX 1746051553775, Thread 35083: XXXX 1746051553775, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553777 XXXX 1746051553777, Thread 35083: XXXX 1746051553777, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553878 XXXX 1746051553878, Thread 35083: XXXX 1746051553878, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553880 XXXX 1746051553880, Thread 35083: XXXX 1746051553880, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051553979 XXXX 1746051553979, Thread 35083: XXXX 1746051553979, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051553981 XXXX 1746051553981, Thread 35083: XXXX 1746051553981, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554082 XXXX 1746051554082, Thread 35083: XXXX 1746051554082, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554083 XXXX 1746051554083, Thread 35083: XXXX 1746051554083, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554182 XXXX 1746051554182, Thread 35083: XXXX 1746051554182, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554183 XXXX 1746051554183, Thread 35083: XXXX 1746051554183, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554284 XXXX 1746051554284, Thread 35083: XXXX 1746051554284, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554286 XXXX 1746051554286, Thread 35083: XXXX 1746051554286, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554386 XXXX 1746051554386, Thread 35083: XXXX 1746051554386, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554387 XXXX 1746051554387, Thread 35083: XXXX 1746051554387, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554487 XXXX 1746051554487, Thread 35083: XXXX 1746051554487, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554488 XXXX 1746051554488, Thread 35083: XXXX 1746051554488, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554588 XXXX 1746051554588, Thread 35083: XXXX 1746051554588, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554590 XXXX 1746051554590, Thread 35083: XXXX 1746051554590, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554691 XXXX 1746051554691, Thread 35083: XXXX 1746051554691, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554692 XXXX 1746051554692, Thread 35083: XXXX 1746051554692, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554792 XXXX 1746051554792, Thread 35083: XXXX 1746051554792, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554792 XXXX 1746051554792, Thread 35083: XXXX 1746051554792, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554891 XXXX 1746051554891, Thread 35083: XXXX 1746051554891, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554892 XXXX 1746051554892, Thread 35083: XXXX 1746051554892, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051554993 XXXX 1746051554993, Thread 35083: XXXX 1746051554993, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051554994 XXXX 1746051554994, Thread 35083: XXXX 1746051554994, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555093 XXXX 1746051555093, Thread 35083: XXXX 1746051555093, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555095 XXXX 1746051555095, Thread 35083: XXXX 1746051555095, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555194 XXXX 1746051555194, Thread 35083: XXXX 1746051555194, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555195 XXXX 1746051555195, Thread 35083: XXXX 1746051555195, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555295 XXXX 1746051555295, Thread 35083: XXXX 1746051555295, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555296 XXXX 1746051555296, Thread 35083: XXXX 1746051555296, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555396 XXXX 1746051555396, Thread 35083: XXXX 1746051555396, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555397 XXXX 1746051555397, Thread 35083: XXXX 1746051555397, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555498 XXXX 1746051555498, Thread 35083: XXXX 1746051555498, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555499 XXXX 1746051555499, Thread 35083: XXXX 1746051555499, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555600 XXXX 1746051555600, Thread 35083: XXXX 1746051555600, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555601 XXXX 1746051555601, Thread 35083: XXXX 1746051555601, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555701 XXXX 1746051555701, Thread 35083: XXXX 1746051555701, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555702 XXXX 1746051555702, Thread 35083: XXXX 1746051555702, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555803 XXXX 1746051555803, Thread 35083: XXXX 1746051555803, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555804 XXXX 1746051555804, Thread 35083: XXXX 1746051555804, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051555905 XXXX 1746051555905, Thread 35083: XXXX 1746051555905, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051555905 XXXX 1746051555905, Thread 35083: XXXX 1746051555905, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556005 XXXX 1746051556005, Thread 35083: XXXX 1746051556005, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556007 XXXX 1746051556007, Thread 35083: XXXX 1746051556007, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556105 XXXX 1746051556105, Thread 35083: XXXX 1746051556105, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556107 XXXX 1746051556107, Thread 35083: XXXX 1746051556107, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556206 XXXX 1746051556206, Thread 35083: XXXX 1746051556206, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556208 XXXX 1746051556208, Thread 35083: XXXX 1746051556208, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556307 XXXX 1746051556307, Thread 35083: XXXX 1746051556307, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556308 XXXX 1746051556308, Thread 35083: XXXX 1746051556308, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556408 XXXX 1746051556408, Thread 35083: XXXX 1746051556408, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556409 XXXX 1746051556409, Thread 35083: XXXX 1746051556409, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556510 XXXX 1746051556510, Thread 35083: XXXX 1746051556510, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556511 XXXX 1746051556511, Thread 35083: XXXX 1746051556511, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556610 XXXX 1746051556610, Thread 35083: XXXX 1746051556610, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556612 XXXX 1746051556612, Thread 35083: XXXX 1746051556612, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556713 XXXX 1746051556713, Thread 35083: XXXX 1746051556713, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556714 XXXX 1746051556714, Thread 35083: XXXX 1746051556714, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556813 XXXX 1746051556813, Thread 35083: XXXX 1746051556813, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556815 XXXX 1746051556815, Thread 35083: XXXX 1746051556815, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051556914 XXXX 1746051556914, Thread 35083: XXXX 1746051556914, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051556915 XXXX 1746051556915, Thread 35083: XXXX 1746051556915, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557016 XXXX 1746051557016, Thread 35083: XXXX 1746051557016, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557018 XXXX 1746051557018, Thread 35083: XXXX 1746051557018, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557119 XXXX 1746051557119, Thread 35083: XXXX 1746051557119, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557120 XXXX 1746051557120, Thread 35083: XXXX 1746051557120, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557219 XXXX 1746051557219, Thread 35083: XXXX 1746051557219, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557220 XXXX 1746051557220, Thread 35083: XXXX 1746051557220, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557319 XXXX 1746051557319, Thread 35083: XXXX 1746051557319, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557320 XXXX 1746051557320, Thread 35083: XXXX 1746051557320, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557420 XXXX 1746051557420, Thread 35083: XXXX 1746051557420, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557422 XXXX 1746051557422, Thread 35083: XXXX 1746051557422, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557520 XXXX 1746051557520, Thread 35083: XXXX 1746051557520, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557522 XXXX 1746051557522, Thread 35083: XXXX 1746051557522, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557623 XXXX 1746051557623, Thread 35083: XXXX 1746051557623, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557624 XXXX 1746051557624, Thread 35083: XXXX 1746051557624, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557723 XXXX 1746051557723, Thread 35083: XXXX 1746051557723, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557724 XXXX 1746051557724, Thread 35083: XXXX 1746051557724, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557826 XXXX 1746051557826, Thread 35083: XXXX 1746051557826, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557828 XXXX 1746051557828, Thread 35083: XXXX 1746051557828, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051557927 XXXX 1746051557927, Thread 35083: XXXX 1746051557927, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051557928 XXXX 1746051557928, Thread 35083: XXXX 1746051557928, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558028 XXXX 1746051558028, Thread 35083: XXXX 1746051558028, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558029 XXXX 1746051558029, Thread 35083: XXXX 1746051558029, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558130 XXXX 1746051558130, Thread 35083: XXXX 1746051558130, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558131 XXXX 1746051558131, Thread 35083: XXXX 1746051558131, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558230 XXXX 1746051558230, Thread 35083: XXXX 1746051558230, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558232 XXXX 1746051558232, Thread 35083: XXXX 1746051558232, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558331 XXXX 1746051558331, Thread 35083: XXXX 1746051558331, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558333 XXXX 1746051558333, Thread 35083: XXXX 1746051558333, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558432 XXXX 1746051558432, Thread 35083: XXXX 1746051558432, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558433 XXXX 1746051558433, Thread 35083: XXXX 1746051558433, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558533 XXXX 1746051558533, Thread 35083: XXXX 1746051558533, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558534 XXXX 1746051558534, Thread 35083: XXXX 1746051558534, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558634 XXXX 1746051558634, Thread 35083: XXXX 1746051558634, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558635 XXXX 1746051558635, Thread 35083: XXXX 1746051558635, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558733 XXXX 1746051558733, Thread 35083: XXXX 1746051558733, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558734 XXXX 1746051558734, Thread 35083: XXXX 1746051558734, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558835 XXXX 1746051558835, Thread 35083: XXXX 1746051558835, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558836 XXXX 1746051558836, Thread 35083: XXXX 1746051558836, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051558936 XXXX 1746051558936, Thread 35083: XXXX 1746051558936, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051558937 XXXX 1746051558937, Thread 35083: XXXX 1746051558937, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559036 XXXX 1746051559036, Thread 35083: XXXX 1746051559036, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559037 XXXX 1746051559037, Thread 35083: XXXX 1746051559037, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559136 XXXX 1746051559136, Thread 35083: XXXX 1746051559136, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559137 XXXX 1746051559137, Thread 35083: XXXX 1746051559137, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559237 XXXX 1746051559237, Thread 35083: XXXX 1746051559237, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559238 XXXX 1746051559238, Thread 35083: XXXX 1746051559238, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559337 XXXX 1746051559337, Thread 35083: XXXX 1746051559337, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559338 XXXX 1746051559338, Thread 35083: XXXX 1746051559338, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559437 XXXX 1746051559437, Thread 35083: XXXX 1746051559437, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559439 XXXX 1746051559439, Thread 35083: XXXX 1746051559439, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559539 XXXX 1746051559539, Thread 35083: XXXX 1746051559539, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559540 XXXX 1746051559540, Thread 35083: XXXX 1746051559540, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559640 XXXX 1746051559640, Thread 35083: XXXX 1746051559640, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559642 XXXX 1746051559642, Thread 35083: XXXX 1746051559642, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559742 XXXX 1746051559742, Thread 35083: XXXX 1746051559742, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559744 XXXX 1746051559744, Thread 35083: XXXX 1746051559744, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559843 XXXX 1746051559843, Thread 35083: XXXX 1746051559843, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559844 XXXX 1746051559844, Thread 35083: XXXX 1746051559844, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051559944 XXXX 1746051559944, Thread 35083: XXXX 1746051559944, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051559945 XXXX 1746051559945, Thread 35083: XXXX 1746051559945, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560044 XXXX 1746051560044, Thread 35083: XXXX 1746051560044, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560045 XXXX 1746051560045, Thread 35083: XXXX 1746051560045, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560146 XXXX 1746051560146, Thread 35083: XXXX 1746051560146, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560147 XXXX 1746051560147, Thread 35083: XXXX 1746051560147, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560248 XXXX 1746051560248, Thread 35083: XXXX 1746051560248, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560249 XXXX 1746051560249, Thread 35083: XXXX 1746051560249, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560348 XXXX 1746051560348, Thread 35083: XXXX 1746051560348, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560349 XXXX 1746051560349, Thread 35083: XXXX 1746051560349, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560448 XXXX 1746051560448, Thread 35083: XXXX 1746051560448, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560449 XXXX 1746051560449, Thread 35083: XXXX 1746051560449, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560549 XXXX 1746051560549, Thread 35083: XXXX 1746051560549, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560550 XXXX 1746051560550, Thread 35083: XXXX 1746051560550, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560651 XXXX 1746051560651, Thread 35083: XXXX 1746051560651, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560652 XXXX 1746051560652, Thread 35083: XXXX 1746051560652, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560751 XXXX 1746051560751, Thread 35083: XXXX 1746051560751, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560752 XXXX 1746051560752, Thread 35083: XXXX 1746051560752, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560854 XXXX 1746051560854, Thread 35083: XXXX 1746051560854, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560855 XXXX 1746051560855, Thread 35083: XXXX 1746051560855, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051560955 XXXX 1746051560955, Thread 35083: XXXX 1746051560955, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051560956 XXXX 1746051560956, Thread 35083: XXXX 1746051560956, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561057 XXXX 1746051561057, Thread 35083: XXXX 1746051561057, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561058 XXXX 1746051561058, Thread 35083: XXXX 1746051561058, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561156 XXXX 1746051561156, Thread 35083: XXXX 1746051561156, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561157 XXXX 1746051561157, Thread 35083: XXXX 1746051561157, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561258 XXXX 1746051561258, Thread 35083: XXXX 1746051561258, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561259 XXXX 1746051561259, Thread 35083: XXXX 1746051561259, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561357 XXXX 1746051561357, Thread 35083: XXXX 1746051561357, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561359 XXXX 1746051561359, Thread 35083: XXXX 1746051561359, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561459 XXXX 1746051561459, Thread 35083: XXXX 1746051561458, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561460 XXXX 1746051561460, Thread 35083: XXXX 1746051561460, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561560 XXXX 1746051561560, Thread 35083: XXXX 1746051561560, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561562 XXXX 1746051561562, Thread 35083: XXXX 1746051561562, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561662 XXXX 1746051561662, Thread 35083: XXXX 1746051561662, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561663 XXXX 1746051561663, Thread 35083: XXXX 1746051561663, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561761 XXXX 1746051561761, Thread 35083: XXXX 1746051561761, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561763 XXXX 1746051561763, Thread 35083: XXXX 1746051561763, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561864 XXXX 1746051561864, Thread 35083: XXXX 1746051561864, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561865 XXXX 1746051561865, Thread 35083: XXXX 1746051561865, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051561965 XXXX 1746051561965, Thread 35083: XXXX 1746051561965, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051561966 XXXX 1746051561966, Thread 35083: XXXX 1746051561966, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562066 XXXX 1746051562066, Thread 35083: XXXX 1746051562066, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562068 XXXX 1746051562068, Thread 35083: XXXX 1746051562068, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562167 XXXX 1746051562167, Thread 35083: XXXX 1746051562167, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562168 XXXX 1746051562168, Thread 35083: XXXX 1746051562168, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562269 XXXX 1746051562269, Thread 35083: XXXX 1746051562269, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562270 XXXX 1746051562270, Thread 35083: XXXX 1746051562270, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562370 XXXX 1746051562370, Thread 35083: XXXX 1746051562370, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562371 XXXX 1746051562371, Thread 35083: XXXX 1746051562371, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562471 XXXX 1746051562471, Thread 35083: XXXX 1746051562471, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562473 XXXX 1746051562473, Thread 35083: XXXX 1746051562473, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562572 XXXX 1746051562572, Thread 35083: XXXX 1746051562572, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562573 XXXX 1746051562573, Thread 35083: XXXX 1746051562573, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562672 XXXX 1746051562672, Thread 35083: XXXX 1746051562672, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562673 XXXX 1746051562673, Thread 35083: XXXX 1746051562673, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562773 XXXX 1746051562773, Thread 35083: XXXX 1746051562773, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562774 XXXX 1746051562774, Thread 35083: XXXX 1746051562774, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562875 XXXX 1746051562875, Thread 35083: XXXX 1746051562875, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562877 XXXX 1746051562877, Thread 35083: XXXX 1746051562877, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051562976 XXXX 1746051562976, Thread 35083: XXXX 1746051562976, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051562978 XXXX 1746051562978, Thread 35083: XXXX 1746051562978, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563077 XXXX 1746051563077, Thread 35083: XXXX 1746051563077, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563078 XXXX 1746051563078, Thread 35083: XXXX 1746051563078, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563178 XXXX 1746051563178, Thread 35083: XXXX 1746051563178, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563179 XXXX 1746051563179, Thread 35083: XXXX 1746051563179, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563279 XXXX 1746051563279, Thread 35083: XXXX 1746051563279, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563280 XXXX 1746051563280, Thread 35083: XXXX 1746051563280, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563380 XXXX 1746051563380, Thread 35083: XXXX 1746051563380, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563382 XXXX 1746051563382, Thread 35083: XXXX 1746051563382, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563482 XXXX 1746051563482, Thread 35083: XXXX 1746051563481, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563483 XXXX 1746051563483, Thread 35083: XXXX 1746051563483, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563582 XXXX 1746051563582, Thread 35083: XXXX 1746051563582, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563584 XXXX 1746051563584, Thread 35083: XXXX 1746051563584, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563684 XXXX 1746051563684, Thread 35083: XXXX 1746051563684, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563685 XXXX 1746051563685, Thread 35083: XXXX 1746051563685, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563786 XXXX 1746051563786, Thread 35083: XXXX 1746051563786, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563787 XXXX 1746051563787, Thread 35083: XXXX 1746051563787, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563886 XXXX 1746051563886, Thread 35083: XXXX 1746051563886, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563887 XXXX 1746051563887, Thread 35083: XXXX 1746051563887, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051563988 XXXX 1746051563988, Thread 35083: XXXX 1746051563988, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051563989 XXXX 1746051563989, Thread 35083: XXXX 1746051563989, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564090 XXXX 1746051564090, Thread 35083: XXXX 1746051564090, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564091 XXXX 1746051564091, Thread 35083: XXXX 1746051564091, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564189 XXXX 1746051564189, Thread 35083: XXXX 1746051564189, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564190 XXXX 1746051564190, Thread 35083: XXXX 1746051564190, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564290 XXXX 1746051564290, Thread 35083: XXXX 1746051564290, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564291 XXXX 1746051564291, Thread 35083: XXXX 1746051564291, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564392 XXXX 1746051564392, Thread 35083: XXXX 1746051564392, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564393 XXXX 1746051564393, Thread 35083: XXXX 1746051564393, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564494 XXXX 1746051564494, Thread 35083: XXXX 1746051564494, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564496 XXXX 1746051564496, Thread 35083: XXXX 1746051564496, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564597 XXXX 1746051564597, Thread 35083: XXXX 1746051564597, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564598 XXXX 1746051564598, Thread 35083: XXXX 1746051564598, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564698 XXXX 1746051564698, Thread 35083: XXXX 1746051564698, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564699 XXXX 1746051564699, Thread 35083: XXXX 1746051564699, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564800 XXXX 1746051564800, Thread 35083: XXXX 1746051564800, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564801 XXXX 1746051564801, Thread 35083: XXXX 1746051564801, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051564900 XXXX 1746051564900, Thread 35083: XXXX 1746051564900, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051564901 XXXX 1746051564901, Thread 35083: XXXX 1746051564901, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565001 XXXX 1746051565001, Thread 35083: XXXX 1746051565001, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565002 XXXX 1746051565002, Thread 35083: XXXX 1746051565002, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565102 XXXX 1746051565102, Thread 35083: XXXX 1746051565102, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565103 XXXX 1746051565103, Thread 35083: XXXX 1746051565103, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565202 XXXX 1746051565202, Thread 35083: XXXX 1746051565202, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565203 XXXX 1746051565203, Thread 35083: XXXX 1746051565203, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565304 XXXX 1746051565304, Thread 35083: XXXX 1746051565304, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565306 XXXX 1746051565306, Thread 35083: XXXX 1746051565306, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565406 XXXX 1746051565406, Thread 35083: XXXX 1746051565406, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565407 XXXX 1746051565407, Thread 35083: XXXX 1746051565407, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565506 XXXX 1746051565506, Thread 35083: XXXX 1746051565506, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565507 XXXX 1746051565507, Thread 35083: XXXX 1746051565507, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565608 XXXX 1746051565608, Thread 35083: XXXX 1746051565608, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565609 XXXX 1746051565609, Thread 35083: XXXX 1746051565609, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565708 XXXX 1746051565708, Thread 35083: XXXX 1746051565708, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565709 XXXX 1746051565709, Thread 35083: XXXX 1746051565709, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565810 XXXX 1746051565810, Thread 35083: XXXX 1746051565810, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565811 XXXX 1746051565811, Thread 35083: XXXX 1746051565811, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051565910 XXXX 1746051565910, Thread 35083: XXXX 1746051565910, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051565911 XXXX 1746051565911, Thread 35083: XXXX 1746051565911, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566011 XXXX 1746051566011, Thread 35083: XXXX 1746051566011, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566013 XXXX 1746051566013, Thread 35083: XXXX 1746051566013, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566112 XXXX 1746051566112, Thread 35083: XXXX 1746051566112, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566114 XXXX 1746051566114, Thread 35083: XXXX 1746051566114, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566214 XXXX 1746051566214, Thread 35083: XXXX 1746051566214, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566215 XXXX 1746051566215, Thread 35083: XXXX 1746051566215, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566315 XXXX 1746051566315, Thread 35083: XXXX 1746051566315, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566316 XXXX 1746051566316, Thread 35083: XXXX 1746051566316, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566415 XXXX 1746051566415, Thread 35083: XXXX 1746051566415, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566416 XXXX 1746051566416, Thread 35083: XXXX 1746051566416, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566517 XXXX 1746051566517, Thread 35083: XXXX 1746051566517, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566518 XXXX 1746051566518, Thread 35083: XXXX 1746051566518, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566619 XXXX 1746051566619, Thread 35083: XXXX 1746051566619, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566620 XXXX 1746051566620, Thread 35083: XXXX 1746051566620, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566719 XXXX 1746051566719, Thread 35083: XXXX 1746051566719, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566720 XXXX 1746051566720, Thread 35083: XXXX 1746051566720, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566820 XXXX 1746051566820, Thread 35083: XXXX 1746051566820, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566822 XXXX 1746051566822, Thread 35083: XXXX 1746051566820, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051566921 XXXX 1746051566921, Thread 35083: XXXX 1746051566921, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051566922 XXXX 1746051566922, Thread 35083: XXXX 1746051566922, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567022 XXXX 1746051567022, Thread 35083: XXXX 1746051567022, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567023 XXXX 1746051567023, Thread 35083: XXXX 1746051567023, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567124 XXXX 1746051567124, Thread 35083: XXXX 1746051567124, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567125 XXXX 1746051567125, Thread 35083: XXXX 1746051567125, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567224 XXXX 1746051567224, Thread 35083: XXXX 1746051567224, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567225 XXXX 1746051567225, Thread 35083: XXXX 1746051567225, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567325 XXXX 1746051567325, Thread 35083: XXXX 1746051567325, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567327 XXXX 1746051567327, Thread 35083: XXXX 1746051567327, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567427 XXXX 1746051567427, Thread 35083: XXXX 1746051567427, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567428 XXXX 1746051567428, Thread 35083: XXXX 1746051567428, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567528 XXXX 1746051567528, Thread 35083: XXXX 1746051567528, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567529 XXXX 1746051567529, Thread 35083: XXXX 1746051567529, Exiting Thread 35083: Commands::runScriptBasic  
+35083 1746051567628 XXXX 1746051567628, Thread 35083: XXXX 1746051567628, Entering Thread 35083: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+35083 1746051567629 XXXX 1746051567629, Thread 35083: com.Send returned false 
+35083 1746051567629 XXXX 1746051567629, Thread 35083: transfer: exception after writeHeaderAndGetResult null 
+35083 1746051567629 XXXX 1746051567629, Thread 35083: XXXX 1746051567629, Entering Thread 35083: ToolCommUsb::recoverFromProtocolError, type = NO_SCRIPT  
+35083 1746051567629 XXXX 1746051567629, Thread 35083: Send Abort Script Engine Command 
+35083 1746051567629 XXXX 1746051567629, Thread 35083: XXXX 1746051567629, Entering Thread 35083: ToolCommUsb::killScriptEngine  
+35083 1746051567630 XXXX 1746051567630, Thread 35083: com.Send returned false 
+35083 1746051567630 XXXX 1746051567630, Thread 35083: Failed sending Abort Script Engine Command. Set nuclear option = true 
+35083 1746051567630 XXXX 1746051567630, Thread 35083: About to nuke 
+35083 1746051567630 XXXX 1746051567630, Thread 35083: XXXX 1746051567630, Entering Thread 35083: ToolCommUsb::nuclearOption  
+35083 1746051567631 XXXX 1746051567631, Thread 35083: com.Send returned false 
